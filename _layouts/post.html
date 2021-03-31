@@ -1,0 +1,75 @@
+---
+layout: wrapper
+pagination:
+  enabled: true
+---
+
+<div class="content my-24 space-y-24">
+    <!-- Title -->
+    <div class="container md:max-w-screen-md lg:max-w-screen-sm mx-auto">
+      <div class="space-y-4">
+        <span class="text-yellow-400 text-sm hidden md:block"> {{ page.categories }} </span>
+        <h1 class="text-black text-4xl font-bold leading-tight">{{ page.title }}</h1>
+        <p class="text-gray-600 text-xl">{{ page.excerpt }}</p>
+      </div>
+    </div>
+
+    <section class="overflow-hidden">
+      <div class="container md:max-w-screen-md lg:max-w-screen-md mx-auto">
+        <main class="flex mx-auto max-w-7xl">
+          <div class="sm:flex sm:space-x-6 items-center w-full relative shadow-2xl hover:shadow-lg transition duration-300 ease-in-out rounded-md block">
+            <img class="rounded-xl object-cover w-full h-96" src="{{ page.image | prepend: site.baseurl }}" alt="{{ page.title }}" title="{{ page.title }}">
+          </div>
+        </main>
+      </div>
+    </section>
+
+    <!-- blog -->
+    <div class="container md:max-w-screen-md lg:max-w-screen-sm mx-auto">
+      <main class="space-y-8">
+
+        {{ content }}
+
+      </main>
+    </div>
+
+    <!-- <div class="container md:max-w-screen-md lg:max-w-screen-lg mx-auto">
+      <main class="my-24">
+        <div class="flex mt-12 mb-4 px-4 lg:px-0 items-center justify-between">
+          <h2 class="font-bold text-xl">Related</h2>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-8">
+          <div class="bg-gray-50 rounded-md w-full p-0 shadow-xl hover:shadow-sm transition duration-300 ease-in-out">
+            <img src="https://images.unsplash.com/photo-1526666923127-b2970f64b422?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60" class="rounded-t-lg" alt="technology" />
+            <div class="p-6 space-y-6">
+              <div class="flex justify-between">
+                <h4 class="text-gray-400">Technology</h4>
+                <span class="text-gray-400">30 March 2021</span>
+              </div>
+              <h2 class="font-bold text-3xl text-gray-900">Put all speaking her delicate recurred possible.</h2>
+              <p class="text-gray-700">Set indulgence inquietude discretion insensible bed why announcing. Middleton fat two satisfied additions.</p>
+
+              <a href="#" class="inline-block rounded-md text-yellow-500 ml-auto"> Read more </a>
+            </div>
+          </div>
+
+          <div class="bg-gray-50 rounded-md w-full p-0 shadow-xl hover:shadow-sm transition duration-300 ease-in-out">
+            <img src="https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60" class="rounded-t-lg" alt="technology" />
+            <div class="p-6 space-y-6">
+              <div class="flex justify-between">
+                <h4 class="text-gray-400">Technology</h4>
+                <span class="text-gray-400">30 March 2021</span>
+              </div>
+              <h2 class="font-bold text-3xl text-gray-900">Is at purse tried jokes china ready decay an.</h2>
+              <p class="text-gray-700">Small its shy way had woody downs power. To denoting admitted speaking learning my exercise so in.</p>
+
+              <a href="#" class="inline-block rounded-md text-yellow-500 ml-auto"> Read more </a>
+            </div>
+          </div>
+
+        </div>
+      </main>
+    </div> -->
+
+  </div>

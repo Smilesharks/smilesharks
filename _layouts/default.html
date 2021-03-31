@@ -1,0 +1,88 @@
+---
+layout: wrapper
+---
+
+<div class="content bg-gray-100">
+    <!-- Hero -->
+    {% for post in site.posts limit:1 %}
+        <section class="bg-gray-900 overflow-hidden">
+        <div class="container md:max-w-screen-md lg:max-w-screen-lg mx-auto">
+            <main class="flex mx-auto max-w-7xl py-12 sm:py-24">
+                <a href="{{ post.url }}">
+            <div class="sm:flex sm:space-x-6 items-center w-full relative shadow-2xl hover:shadow-lg transition duration-300 ease-in-out rounded-md sm:bg-gray-800 block">
+                <img src="{{ post.image | prepend: site.baseurl }}" alt="{{ post.title }}" title="{{ post.title }}"  class="sm:rounded-l-lg rounded-t-lg object-cover w-full h-96" />
+                <div class="space-y-4 pr-6">
+                <span class="text-yellow-400 text-sm hidden md:block"> {{ post.categories }} </span>
+                <h1 class="text-gray-200 text-3xl font-bold leading-tight">{{ post.title }}</h1>
+                <p class="text-gray-100">{{ post.excerpt | strip_html | strip_newlines | truncate: 156 }}</p>
+                <span class="inline-block px-6 py-3 rounded-sm bg-yellow-400 hover:bg-yellow-500 text-gray-900 transition duration-300 ease-in-out"> Read more </span>
+                </div>
+            </div>
+        </a>
+            </main>
+
+        </div>
+        </section>
+    {% endfor %}
+
+    <!-- blog -->
+    <div class="container md:max-w-screen-md lg:max-w-screen-lg mx-auto">
+      <main class="my-24">
+        <!-- end featured section -->
+
+        <!-- recent posts -->
+        <div class="flex mt-12 mb-4 px-4 lg:px-0 items-center justify-between">
+          <h2 class="font-bold text-xl">Latest news</h2>
+          <a class="bg-gray-200 hover:bg-yellow-200 text-gray-800 px-3 py-1 rounded-md cursor-pointer"> View all </a>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-8">
+
+        {% for post in site.posts offset:1 limit:6 %}
+
+        <a href="{{ post.url }}">
+          <div class="bg-gray-50 rounded-md w-full p-0 shadow-xl hover:shadow-sm transition duration-300 ease-in-out">
+            <img src="{{ post.image | prepend: site.baseurl }}" alt="{{ post.title }}" title="{{ post.title }}" class="rounded-t-lg" alt="technology" />
+            <div class="p-6 space-y-6">
+              <div class="flex justify-between">
+                <h4 class="text-gray-400">{{ post.categories }}</h4>
+                <span class="text-gray-400">{{ post.date }}</span>
+              </div>
+              <h2 class="font-bold text-3xl text-gray-900">{{ post.title }}</h2>
+              <p class="text-gray-700">{{ post.excerpt | strip_html | strip_newlines | truncate: 156 }}</p>
+
+              <span class="inline-block rounded-md text-yellow-500 ml-auto"> Read more </span>
+            </div>
+          </div>
+        </a>
+        {% endfor %}
+
+        </div>
+
+  <!-- 
+    Showing buttons to move to the next and to the previous list of posts (pager buttons).
+  -->
+  {% if paginator.total_pages > 1 %}
+  <ul class="pager">
+      {% if paginator.previous_page %}
+      <li class="previous">
+          <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+      </li>
+      {% endif %}
+      {% if paginator.next_page %}
+      <li class="next">
+          <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+      </li>
+      {% endif %}
+  </ul>
+  {% endif %}
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+        
+        </div>
+
+        <!-- end recent posts -->
+      </main>
+      <!-- main ends here -->
+    </div>
+  </div>
