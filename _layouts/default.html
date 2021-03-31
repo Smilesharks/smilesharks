@@ -8,7 +8,7 @@ layout: wrapper
         <section class="bg-gray-900 overflow-hidden">
         <div class="container md:max-w-screen-md lg:max-w-screen-lg mx-auto">
             <main class="flex mx-auto max-w-7xl py-12 sm:py-24">
-                <a href="{{ post.url }}">
+                <a href="{{ post.url | relative_url }}">
             <div class="sm:flex sm:space-x-6 items-center w-full relative shadow-2xl hover:shadow-lg transition duration-300 ease-in-out rounded-md sm:bg-gray-800 block">
                 <img src="{{ post.image | prepend: site.baseurl }}" alt="{{ post.title }}" title="{{ post.title }}"  class="sm:rounded-l-lg rounded-t-lg object-cover w-full h-96" />
                 <div class="space-y-4 pr-6">
@@ -40,7 +40,7 @@ layout: wrapper
 
         {% for post in site.posts offset:1 limit:6 %}
 
-        <a href="{{ post.url }}">
+        <a href="{{ post.url | relative_url }}">
           <div class="bg-gray-50 rounded-md w-full p-0 shadow-xl hover:shadow-sm transition duration-300 ease-in-out">
             <img src="{{ post.image | prepend: site.baseurl }}" alt="{{ post.title }}" title="{{ post.title }}" class="rounded-t-lg" alt="technology" />
             <div class="p-6 space-y-6">
