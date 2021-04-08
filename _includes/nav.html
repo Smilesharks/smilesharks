@@ -41,8 +41,6 @@
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
             {% for post in site.pages %}
               <a href="{{ site.baseurl }}{{ post.url }}" class="text-white hover:bg-gray-700 hover:text-gray-300 px-3 py-2 rounded-mds text-sm font-medium">{{ post.title }}</a>
-
-              <a href="{{ post.url }}" class="text-white hover:bg-gray-700 hover:text-gray-300 px-3 py-2 rounded-mds text-sm font-medium">{{ post.title }}</a>
               {% endfor %}
               <a class="text-white hover:bg-gray-700 hover:text-gray-300 px-3 py-2 rounded-mds text-sm font-medium" href="http://portfolio.arielcerda.com/">Portfolio</a>
             </div>
