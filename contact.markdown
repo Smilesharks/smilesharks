@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: wrapper
 title: Contact
 permalink: /contact/
 ---

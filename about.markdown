@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: wrapper
 title: About
 permalink: /about/
 ---
