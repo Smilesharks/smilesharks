@@ -1,16 +1,19 @@
-title: Portfolio - Ariel Cerda Hernandez - UI designer
-email: arielcerdahernandez@gmail.com
+encoding: utf-8
+title: Ariel Cerda Hernandez - Blog
 description: >- # this means to ignore newlines until "baseurl:"
   I am an UI designer  Video editor, content creator, and passionate geek who loves technology.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+email: arielcerdahernandez@gmail.com
 twitter_username: smilesharks
 github_username:  smilesharks
-encoding: utf-8
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars.githubusercontent.com/u/5454390?v=4
-# paginate: 12
+
+
+paginate: 3
+paginate_path: /page:num/
 
 # Build settings
 theme: minima 
@@ -18,7 +21,7 @@ plugins:
   - jekyll-feed
   - jekyll-menus
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  # - jekyll-paginate
+  - jekyll-paginate
   # - jekyll-postcss
 jekyll_admin:
   hidden_links:
@@ -55,25 +58,14 @@ disqus: smilesharks
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
-# Pagination Settings
-# pagination:
-#   enabled: true
-#   per_page: 3
-#   offset: 2
-#   permalink: '/page/:num/'
-#   title: ':title - page :num of :max'
-#   limit: 0
-#   sort_field: 'date'
-#   sort_reverse: true
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

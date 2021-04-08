@@ -1,14 +1,14 @@
 ---
 layout: wrapper
-pagination:
-  enabled: true
+comments: 0
 ---
 
 <div class="content my-24 space-y-24">
     <!-- Title -->
     <div class="container md:max-w-screen-md lg:max-w-screen-sm mx-auto">
       <div class="space-y-4">
-        <span class="text-yellow-400 text-sm hidden md:block"> {{ page.categories }} </span>
+        <span class="text-black text-sm hidden md:block"> {{ page.date | date: "%B %e, %Y" }}
+        </div> </span>
         <h1 class="text-black text-4xl font-bold leading-tight">{{ page.title }}</h1>
         <p class="text-gray-600 text-xl">{{ page.excerpt }}</p>
       </div>
@@ -34,7 +34,8 @@ pagination:
     </div>
     <div class="container md:max-w-screen-md lg:max-w-screen-sm mx-auto">
       {% include disqus.html disqus_identifier=page.disqus_identifier %}
-  </div>
+      <!-- https://blog.webjeda.com/jekyll-comments/#step-3-get-the-disqus-code -->
+    </div>
     <!-- <div class="container md:max-w-screen-md lg:max-w-screen-lg mx-auto">
       <main class="my-24">
         <div class="flex mt-12 mb-4 px-4 lg:px-0 items-center justify-between">
