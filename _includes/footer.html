@@ -1,18 +1,10 @@
 <footer>
   <div class="py-6 text-gray-100 bg-gray-900">
-    <div class="container flex flex-col w-full p-8 space-y-6 text-sm text-white border-gray-700 sm:space-y-0 sm:items-center max-w-7xl md:flex-row md:justify-between">
+    <div class="container mx-auto flex flex-col w-full p-8 space-y-6 text-sm text-white border-gray-700 sm:space-y-0 sm:items-center max-w-7xl md:flex-row md:justify-between">
       <span>
-        <a href="https://myhost.nz/" class="transform logo sm:hover:-translate-y-1" data-unsp-sanitized="clean">
-          <svg class="w-64 mb-4 select-none" height="37">
-            <path d="M65.53 3.788v-.19A3.598 3.598 0 0060.416.334c-.664.308-.946 1.053-.946 1.786v26.1h.023a3.03 3.03 0 006.014 0h.023V16.977c0-.601.105-1.214.469-1.693a4.16 4.16 0 013.32-1.648c1.15 0 2.191.467 2.945 1.22.332.332.463.802.463 1.27v11.525a3.03 3.03 0 106.06 0v-12.12h-.002l.003-.19a7.386 7.386 0 00-13.258-4.483v-7.07z" fill="#F4AE2B"></path>
-            <path d="M6.042 10.423a3.599 3.599 0 00-5.386-2.74C.204 7.944 0 8.467 0 8.99v19.04h.023a3.03 3.03 0 006.014 0h.024V15.908c0-1.136 1.538-2.273 3.409-2.273 1.87 0 3.409 1.137 3.409 2.273V27.652a3.03 3.03 0 106.06 0V15.909c0-1.136 1.35-2.273 3.41-2.273s3.409 1.137 3.409 2.373V27.652a3.03 3.03 0 106.06 0V15.53h-.002l.002-.189a7.386 7.386 0 00-13.826-3.621 7.384 7.384 0 00-6.439-3.765c-2.19 0-4.159.953-5.511 2.468z" fill="#fff"></path>
-            <circle cx="146.78" cy="27.462" r="3.22" fill="#F4AE2B"></circle>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M92.235 30.682c5.753 0 10.416-4.664 10.416-10.417S97.988 9.848 92.235 9.848s-10.417 4.664-10.417 10.417 4.664 10.417 10.417 10.417zm0-4.546c3.033 0 5.492-2.628 5.492-5.87 0-3.243-2.459-5.872-5.492-5.872-3.034 0-5.493 2.629-5.493 5.871 0 3.243 2.46 5.871 5.493 5.871z" fill="#F4AE2B"></path>
-            <path d="M40.758 10.231a3.599 3.599 0 00-6.053-1.183c-.49.544-.459 1.342-.173 2.016l4.015 9.457 2.409 5.675.021-.01c.246.424.583.77.976 1.023l-2.324 6.385c-.18.492-.166 1.052.169 1.454A3.598 3.598 0 0046 33.792l.005.001 5.7-15.661-.022-.008c.01-.044.02-.088.027-.132l2.561-7.036c.179-.492.166-1.053-.169-1.455a3.598 3.598 0 00-6.203 1.257l-.005-.002-3.19 8.764-3.943-9.29-.004.001z" fill="#fff"></path>
-            <path d="M128.788 23.512v.189c0 .105.004.21.013.312a6.44 6.44 0 006.426 6.857c3.557 0 5.682-1.893 5.682-5.302 0-.794 0-1.515-.758-1.515-.568 0-.568.35-.568.568-.189.758-1.326 1.326-2.462 1.326-1.251 0-2.265-.842-2.273-1.883l.001-7.728v-1.753h3.855v-.017a2.273 2.273 0 000-4.51v-.018h-3.855V5.682h-.023a3.032 3.032 0 00-6.014 0h-.023l-.001 4.356h-1.799v.017a2.274 2.274 0 000 4.51v.018h1.799v8.929zM120.501 11.208c-1.572-1.075-3.728-1.738-6.107-1.738-4.812 0-8.712 2.713-8.712 6.06 0 4.45 3.584 6.343 7.576 7.008.562.094 2.922.568 2.922 2.014 0 1.447-2.846 1.774-3.68 1.774a6.32 6.32 0 01-4.716-2.084c-.222-.247-.397-.378-.602-.378-.799.403-1.317.9-1.635 1.515-.882 1.704.87 3.382 1.415 3.754 1.572 1.075 3.728 1.738 6.107 1.738 5.681 0 9.469-2.713 9.469-6.06 0-5.006-4.105-6.238-8.423-7.005-2.228-.395-2.925-1.28-2.888-1.897.084-1.384 2.715-1.894 3.735-1.894a6.32 6.32 0 014.716 2.084c.222.247.398.378.602.378.799-.403 1.318-.9 1.636-1.515.881-1.704-.871-3.382-1.415-3.754z" fill="#F4AE2B"></path>
-          </svg>
+        <a href="{{ site.url }}"  class="hidden lg:block h-8 w-auto items-center col-span-2 font-medium text-gray-900 transform logo sm:col-span-1 sm:mr-10 lg:items-center sm:hover:-translate-y-1 transition duration-300 ease-in-out">
+          {% include logo.html %}
         </a>
-        <a href="tel:0800 454 537" class="text-xl font-bold tracking-wider text-gray-100" data-unsp-sanitized="clean">0800 454 537</a>
       </span>
       <a class="hover:text-yellow-400" href="https://myhost.nz/domain-names" data-unsp-sanitized="clean">Domains</a>
       <a class="hover:text-yellow-400" href="https://myhost.nz/hosting" data-unsp-sanitized="clean">Hosting</a>
@@ -20,7 +12,7 @@
       <a class="hover:text-yellow-400" href="https://myhost.nz/help" data-unsp-sanitized="clean">Help</a>
       <a class="hover:text-yellow-400" href="https://myhost.nz/contact" data-unsp-sanitized="clean">Contact</a>
     </div>
-    <div class="container flex flex-col w-full p-8 text-sm text-white border-gray-700 max-w-7xl md:flex-row md:justify-between md:border-solid md:border-t">
+    <div class="container mx-auto flex flex-col w-full p-8 text-sm text-white border-gray-700 max-w-7xl md:flex-row md:justify-between md:border-solid md:border-t">
       <span class="tracking-wide">44 Olive Road, Penrose, Auckland 1061</span>
       <p>All prices are in <abbr title="New Zealand Dollar">NZD</abbr> and exclude <abbr title="Goods and Services Tax">GST</abbr></p>
       <span class="tracking-wide"> Copyright © MyHost 2021  </span>

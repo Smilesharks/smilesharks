@@ -32,7 +32,9 @@ pagination:
 
       </main>
     </div>
-
+    <div class="container md:max-w-screen-md lg:max-w-screen-sm mx-auto">
+      {% include disqus.html disqus_identifier=page.disqus_identifier %}
+  </div>
     <!-- <div class="container md:max-w-screen-md lg:max-w-screen-lg mx-auto">
       <main class="my-24">
         <div class="flex mt-12 mb-4 px-4 lg:px-0 items-center justify-between">

@@ -6,20 +6,27 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: smilesharks
 github_username:  smilesharks
+encoding: utf-8
+
+# URL of your avatar or profile pic (you could use your GitHub profile pic)
+avatar: https://avatars.githubusercontent.com/u/5454390?v=4
+# paginate: 12
 
 # Build settings
-theme: minima
+theme: minima 
 plugins:
   - jekyll-feed
   - jekyll-menus
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  # - jekyll-paginate
   # - jekyll-postcss
 jekyll_admin:
-  # hidden_links:
-  #   - posts
-  #   - pages
-  #   - staticfiles
-  #   - datafiles
-  #   - configuration
+  hidden_links:
+    - posts
+    - pages
+    - staticfiles
+    - datafiles
+    - configuration
   homepage: "pages"
   collections:
     posts:
@@ -33,6 +40,11 @@ defaults:
     values:
       author: "Ariel"
       layout: "default"
+
+# Enter your Disqus shortname (not your username) to enable commenting on posts
+# You can find your shortname on the Settings page of your Disqus account
+disqus: smilesharks
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
