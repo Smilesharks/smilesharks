@@ -3,16 +3,15 @@ layout: wrapper
 comments: 0
 ---
 
-<div class="content my-24 space-y-24">
+<article class="content my-24 space-y-16">
     <!-- Title -->
-    <div class="container md:max-w-screen-md lg:max-w-screen-sm mx-auto">
+    <header class="container md:max-w-screen-md lg:max-w-screen-sm mx-auto">
       <div class="space-y-4">
-        <span class="text-black text-sm hidden md:block"> {{ page.date | date: "%B %e, %Y" }}
-        </div> </span>
-        <h1 class="text-black text-4xl font-bold leading-tight">{{ page.title }}</h1>
-        <p class="text-gray-600 text-xl">{{ page.excerpt }}</p>
-      </div>
-    </div>
+        <time class="text-black text-sm hidden md:block" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time>      
+        <h1 class="text-black text-5xl font-bold leading-tight">{{ page.title }}</h1>
+        <span class="text-gray-400 text-sm hidden md:block">Author: {% if page.author %}{{ page.author }}{% endif %}</span>
+      </div> 
+    </header>
 
     <section class="overflow-hidden">
       <div class="container md:max-w-screen-md lg:max-w-screen-md mx-auto">
@@ -29,9 +28,27 @@ comments: 0
       <main class="space-y-8">
 
         {{ content }}
-
+        {% include bye.html %}
       </main>
     </div>
+    <div class="container md:max-w-screen-lg lg:max-w-screen-lg mx-auto">
+      <h4 class="text-black text-lg font-bold leading-tight">Últimos posts</h4>
+    </div>
+    <div class="container md:max-w-screen-lg lg:max-w-screen-lg mx-auto grid grid-cols-3 gap-6">
+      {% for post in site.posts limit:3 %}
+          <div class="space-y-6 px-4 py-6 border-gray-700 border rounded-xl">
+            <img src="{{ post.image | prepend: site.baseurl }}" alt="{{ post.title }}" title="{{ post.title }}" class="rounded-t-lg" alt="" />
+              <h2 class="text-lg">
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              </h2>
+              <!-- call the featured-post-image.html template file -->
+              {% if post.featured-image %}{% include post-featured-image.html image=post.featured-image alt=post.featured-image-alt %}{% endif %}
+              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+              {% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}
+          </div>   
+      {% endfor %}
+  </div>
+
     <div class="container md:max-w-screen-md lg:max-w-screen-sm mx-auto">
       {% include disqus.html disqus_identifier=page.disqus_identifier %}
       <!-- https://blog.webjeda.com/jekyll-comments/#step-3-get-the-disqus-code -->
@@ -75,4 +92,4 @@ comments: 0
       </main>
     </div> -->
 
-  </div>
+  </article>
