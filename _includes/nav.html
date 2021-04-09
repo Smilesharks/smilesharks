@@ -39,10 +39,19 @@
         <div class="hidden sm:block sm:ml-6">
           <div class="flex space-x-4">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            {% for post in site.pages %}
-              <a href="{{ site.baseurl }}{{ post.url }}" class="text-white hover:bg-gray-700 hover:text-gray-300 px-3 py-2 rounded-mds text-sm font-medium">{{ post.title }}</a>
-              {% endfor %}
+{% assign pages_list = site.pages | sort:"url" %}
+{% for node in pages_list %}
+  {% if node.title != null %}
+    {% if node.layout == "page" %}
+      <a class="{% if page.url == node.url %} text-yellow-500 {% endif %} text-white hover:bg-gray-700 hover:text-gray-300 px-3 py-2 rounded-mds text-sm font-medium" href="{{ node.url }}">
+        {{ node.title }}
+      </a>
+    {% endif %}
+  {% endif %}
+{% endfor %}
               <a class="text-white hover:bg-gray-700 hover:text-gray-300 px-3 py-2 rounded-mds text-sm font-medium" href="http://portfolio.arielcerda.com/">Portfolio</a>
+              <a class="text-white hover:bg-gray-700 hover:text-gray-300 px-3 py-2 rounded-mds text-sm font-medium" href="http://portfolio.arielcerda.com/">Blog</a>
+              <a class="text-white hover:bg-gray-700 hover:text-gray-300 px-3 py-2 rounded-mds text-sm font-medium" href="http://portfolio.arielcerda.com/">Contacto</a>
             </div>
           </div>
 
