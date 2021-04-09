@@ -24,7 +24,7 @@ categories:
  [![🎥](https://s.w.org/images/core/emoji/11.2.0/svg/1f3a5.svg) MOVIEDATE – Tu próxima cita con la pantalla grande](http://www.arielcerda.com/%f0%9f%8e%a5-moviedate-tu-proxima-cita-con-la-pantalla-grande/ "Enlace permanente: 🎥 MOVIEDATE – Tu próxima cita con la pantalla grande")
 =========================================================================================================================================================================================================================================================================================
 
-https://www.youtube.com/embed/u8L7Sdg8rJY?wmode=opaque
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/u8L7Sdg8rJY/0.jpg)](https://www.youtube.com/watch?v=u8L7Sdg8rJY)
 
 ¿Ansioso por el estreno de la nueva película de tu saga preferida? ¿No puedes decidirte cuál será la próxima película que iras a ver al cine?
 
