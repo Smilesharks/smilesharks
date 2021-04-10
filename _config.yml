@@ -43,6 +43,7 @@ defaults:
     values:
       author: "Ariel"
       layout: "default"
+      author_pic: "https://miro.medium.com/fit/c/262/262/0*j1z_FcHb_vjgf5cf.jpeg"
       image: https://via.placeholder.com/150
 
 permalink: pretty

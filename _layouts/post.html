@@ -9,8 +9,11 @@ comments: 0
       <div class="space-y-4">
         <time class="text-black text-sm hidden md:block" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time>      
         <h1 class="text-black text-5xl font-bold leading-tight">{{ page.title }}</h1>
-        <span class="text-gray-400 text-sm hidden md:block">Author: {% if page.author %}{{ page.author }}{% endif %}</span>
-      </div> 
+        <div class="flex items-center">
+          <span class="text-gray-400 text-sm hidden md:block"><img class="rounded-full p-1 bg-gray-50 shadow-lg h-8 w-8 mr-2 object-cover" src="{{ page.author_pic | prepend: site.baseurl }}" alt="{{ page.title }}" title="{{ page.title }}"></span>
+          <span class="text-gray-400 text-sm hidden md:block">{% if page.author %}{{ page.author }}{% endif %}</span>
+        </div>
+    </div> 
     </header>
 
     <section class="overflow-hidden">
@@ -32,7 +35,7 @@ comments: 0
       </main>
     </div>
     <div class="container md:max-w-screen-lg lg:max-w-screen-lg mx-auto">
-      <h4 class="text-black text-lg font-bold leading-tight">Últimos posts</h4>
+      <h4 class="text-black text-lg font-bold leading-tight">Últimos posts / Last Articles</h4>
     </div>
     <div class="container md:max-w-screen-lg lg:max-w-screen-lg mx-auto grid grid-cols-3 gap-6">
       {% for post in site.posts limit:3 %}
