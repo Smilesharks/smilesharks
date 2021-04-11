@@ -6,8 +6,6 @@ categories: sketch
 image: 'https://cdn-images-1.medium.com/max/1600/1*qb_4SIuEJxKxbxqHQ8Oj0g.gif'
 ---
 
----
-
 Los plugins en Sketch pueden cambiar totalmente que tan eficientemente puedes trabajar, desde la forma en que colaboras, automatizar procesos, encontrar lo que necesitas dentro de un documento o casi ser una extensión de tus manos.
 
 Cuando empecé a trabajar en una nueva oficina hice esta lista para poder recordar cuales eran los plugins que tenia instalados en mi mac personal. Obviamente no son todos los que tengo instalados pero si los que encuentro que son indispensables para aumentar mi productividad y eficiencia.
