@@ -1,0 +1,9 @@
+<section>
+  <div class="thumb-container">
+    <h3>hola  </h3>
+    {% for projects in site.projects %}
+    <h2>{{ projects.title }} - {{ projects.position }}</h2>
+    <p>{{ projects.content | markdownify }}</p>
+  {% endfor %}
+  </div>
+</section>  

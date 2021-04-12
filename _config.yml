@@ -31,10 +31,13 @@ jekyll_admin:
     - datafiles
     - configuration
   homepage: "pages"
-  collections:
-    posts:
-      output: true
-      sidebar_label: News
+collections:
+  # posts:
+  #   output: true
+  projects:
+    output: true
+    # permalink: /projects/:path
+
 
 defaults:
   -
