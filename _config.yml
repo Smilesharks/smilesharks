@@ -12,7 +12,8 @@ github_username:  smilesharks
 avatar: https://avatars.githubusercontent.com/u/5454390?v=4
 
 
-paginate: 3
+paginate: 5
+paginate_path: "page:num"
 
 # Build settings
 theme: minima 

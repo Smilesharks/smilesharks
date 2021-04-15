@@ -31,10 +31,15 @@ comments: 0
     <div class="container px-4  md:max-w-screen-md lg:max-w-screen-sm mx-auto">
       <main class="space-y-8">
         {{ content }}
+      </main>
+    </div>
+  </article>
+    <div class="container px-4  md:max-w-screen-md lg:max-w-screen-sm mx-auto">
+      <main class="space-y-8">
         {% include bye.html %}
       </main>
     </div>
-    <div class="container px-4 md:max-w-screen-lg lg:max-w-screen-lg mx-auto">
+    <div class="container px-4 my-24 md:max-w-screen-lg lg:max-w-screen-lg mx-auto">
       <h4 class="text-black text-lg font-bold leading-tight">Últimos posts / Last Articles</h4>
     </div>
     <div class="container px-4 md:max-w-screen-lg lg:max-w-screen-lg mx-auto grid sm:grid-cols-3 gap-6">
@@ -52,8 +57,7 @@ comments: 0
       {% endfor %}
   </div>
 
-    <div class="container px-4 md:max-w-screen-md lg:max-w-screen-sm mx-auto">
+    <div class="container px-4 my-24 md:max-w-screen-md lg:max-w-screen-sm mx-auto">
       {% include disqus.html disqus_identifier=page.disqus_identifier %}
       <!-- https://blog.webjeda.com/jekyll-comments/#step-3-get-the-disqus-code -->
     </div>
-  </article>

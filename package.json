@@ -6,5 +6,8 @@
     "postcss": "^8.2.8",
     "postcss-import": "^14.0.0",
     "tailwindcss": "^2.0.3"
+  },
+  "dependencies": {
+    "alpinejs": "^2.8.2"
   }
 }

@@ -7,7 +7,8 @@ pagination:
 
 <div class="content bg-gray-100">
     <!-- Hero -->
-    {% for post in site.posts limit:1 %}
+    {% for post in paginator.posts limit:1 %}
+    {% if page.url == "/" %}
         <section class="bg-gray-900 overflow-hidden">
         <div class="container px-4 md:max-w-screen-md lg:max-w-screen-lg mx-auto">
             <main class="flex mx-auto max-w-7xl py-12 sm:py-24">
@@ -26,6 +27,7 @@ pagination:
 
         </div>
         </section>
+        {% endif %}
     {% endfor %}
 
     <!-- blog -->
@@ -40,7 +42,7 @@ pagination:
 
         <div class="grid sm:grid-cols-2 gap-8">
 
-        {% for post in site.posts offset:1 limit:6 %}
+        {% for post in paginator.posts offset:1 limit:6 %}
 
         <a href="{{ post.url | absolute_url }}">
           <div class="bg-gray-50 rounded-md w-full p-0 shadow-xl hover:shadow-sm transition duration-300 ease-in-out">
