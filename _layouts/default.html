@@ -1,23 +1,26 @@
 ---
 layout: wrapper
+pagination:
+  enabled: true
+  collection: all
 ---
 
 <div class="content bg-gray-100">
     <!-- Hero -->
     {% for post in site.posts limit:1 %}
         <section class="bg-gray-900 overflow-hidden">
-        <div class="container md:max-w-screen-md lg:max-w-screen-lg mx-auto">
+        <div class="container px-4 md:max-w-screen-md lg:max-w-screen-lg mx-auto">
             <main class="flex mx-auto max-w-7xl py-12 sm:py-24">
                 <a href="{{ post.url | absolute_url }}">
-            <div class="sm:flex sm:space-x-6 items-center w-full relative shadow-2xl hover:shadow-lg transition duration-300 ease-in-out rounded-md sm:bg-gray-800 block">
+            <div class="sm:flex space-x-6 items-center w-full relative shadow-2xl hover:shadow-lg transition duration-300 ease-in-out rounded-md sm:bg-gray-800 block">
                 <img src="{{ post.image | prepend: site.baseurl }}" alt="{{ post.title }}" title="{{ post.title }}"  class="sm:rounded-l-lg rounded-t-lg object-cover w-full h-96" />
                 <div class="space-y-4 pr-6">
                 <span class="text-yellow-400 text-sm hidden md:block"> {{ post.categories | first }} </span>
                 <h1 class="text-gray-200 text-3xl font-bold leading-tight">{{ post.title }}</h1>
                 <p class="text-gray-100">{{ post.excerpt | strip_html | strip_newlines | truncate: 156 }}</p>
                 <span class="inline-block px-6 py-3 rounded-sm bg-yellow-400 hover:bg-yellow-500 text-gray-900 transition duration-300 ease-in-out"> Read more → </span>
-                </div>
-            </div>
+              </div>
+          </div>
         </a>
             </main>
 
@@ -26,7 +29,7 @@ layout: wrapper
     {% endfor %}
 
     <!-- blog -->
-    <div class="container md:max-w-screen-md lg:max-w-screen-lg mx-auto">
+    <div class="container px-4 md:max-w-screen-md lg:max-w-screen-lg mx-auto">
       <main class="py-24">
         <!-- end featured section -->
 
@@ -56,37 +59,30 @@ layout: wrapper
         </a>
         {% endfor %}
 
-        </div>
+        </div> 
 
-  <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | absolute_url }}">via RSS</a></p>
-  
-<!-- This loops through the paginated posts -->
-{% for post in paginator.posts %}
-  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-  <p class="author">
-    <span class="date">{{ post.date }}</span>
-  </p>
-  <div class="content">
-    {{ post.content }}
-  </div>
-{% endfor %}
+      <!-- This loops through the paginated posts -->
+      <div class="pagination">
+        {% if paginator.previous_page %}
+          <a href="{{ paginator.previous_page_path }}" class="previous">
+            Previous
+          </a>
+        {% else %}
+          <span class="previous">Previous</span>
+        {% endif %}
+        <span class="page_number ">
+          Page: {{ paginator.page }} of {{ paginator.total_pages }}
+        </span>
+        {% if paginator.next_page %}
+          <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+        {% else %}
+          <span class="next ">Next</span>
+        {% endif %}
+      </div>
 
-<!-- Pagination links -->
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-  {% else %}
-    <span class="previous">Previous</span>
-  {% endif %}
-  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-  {% else %}
-    <span class="next ">Next</span>
-  {% endif %}
-</div>
-                
-                </div>
+
+
+    </div>
 
         <!-- end recent posts -->
       </main>

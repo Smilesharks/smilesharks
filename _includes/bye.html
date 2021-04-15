@@ -1,7 +1,7 @@
 <hr>
 <P>Acompáñame estoy documentando mi viaje y compartiendo la experiencia de vivir en Nueva Zelanda, cualquier comentario o sugerencia siempre es bienvenido.</P>
 <hr>
-<div class="grid grid-cols-2 gap-6 ">
+<div class="sm:grid grid-cols-2 space-y-6 sm:space-y-0 sm:gap-6 ">
 
     <div class="space-y-6">
         <h5>Enjoyed the article?</h5>
@@ -15,10 +15,10 @@
     </div>
     <div class="space-y-6">
         <h5>Sigueme:</h5>
-    <div class="flex items-center">
-        <span class="text-gray-400 text-sm hidden md:block"><img class="rounded-full p-1 bg-gray-50 shadow-lg h-8 w-8 mr-2 object-cover" src="{{ page.author_pic | prepend: site.baseurl }}" alt="{{ page.title }}" title="{{ page.title }}"></span>
-        <span class="text-gray-400 text-sm hidden md:block">{% if page.author %}{{ page.author }}{% endif %}</span>
-    </div>
-    {% include icons.html %}
+        <div class="flex items-center">
+            <span class="text-gray-400 text-sm hidden md:block"><img class="rounded-full p-1 bg-gray-50 shadow-lg h-8 w-8 mr-2 object-cover" src="{{ page.author_pic | prepend: site.baseurl }}" alt="{{ page.title }}" title="{{ page.title }}"></span>
+            <span class="text-gray-400 text-sm hidden md:block">{% if page.author %}{{ page.author }}{% endif %}</span>
+        </div>
+        {% include icons.html %}
     </div>
 </div>

@@ -5,12 +5,13 @@ comments: 0
 
 <article class="content my-24 space-y-16">
     <!-- Title -->
-    <header class="container md:max-w-screen-md lg:max-w-screen-sm mx-auto">
+    <header class="container px-4 md:max-w-screen-md lg:max-w-screen-sm mx-auto">
       <div class="space-y-4">
         <time class="text-black text-sm hidden md:block" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time>      
         <h1 class="text-black text-5xl font-bold leading-tight">{{ page.title }}</h1>
         <div class="flex items-center">
-          <span class="text-gray-400 text-sm hidden md:block"><img class="rounded-full p-1 bg-gray-50 shadow-lg h-8 w-8 mr-2 object-cover" src="{{ page.author_pic | prepend: site.baseurl }}" alt="{{ page.title }}" title="{{ page.title }}"></span>
+          <span class="text-gray-400 text-sm hidden md:block">
+            <img class="rounded-full p-1 bg-gray-50 shadow-lg h-8 w-8 mr-2 object-cover" src="{{ page.author_pic | prepend: site.baseurl }}" alt="{{ page.title }}" title="{{ page.title }}"></span>
           <span class="text-gray-400 text-sm hidden md:block">{% if page.author %}{{ page.author }}{% endif %}</span>
         </div>
     </div> 
@@ -20,24 +21,23 @@ comments: 0
       <div class="container md:max-w-screen-md lg:max-w-screen-md mx-auto">
         <main class="flex mx-auto max-w-7xl">
           <div class="sm:flex sm:space-x-6 items-center w-full relative shadow-2xl hover:shadow-lg transition duration-300 ease-in-out rounded-md block">
-            <img class="rounded-xl object-cover w-full h-96" src="{{ page.image | prepend: site.baseurl }}" alt="{{ page.title }}" title="{{ page.title }}">
+            <img class="sm:rounded-xl object-cover w-full sm:h-96" src="{{ page.image | prepend: site.baseurl }}" alt="{{ page.title }}" title="{{ page.title }}">
           </div>
         </main>
       </div>
     </section>
 
     <!-- blog -->
-    <div class="container md:max-w-screen-md lg:max-w-screen-sm mx-auto">
+    <div class="container px-4  md:max-w-screen-md lg:max-w-screen-sm mx-auto">
       <main class="space-y-8">
-
         {{ content }}
         {% include bye.html %}
       </main>
     </div>
-    <div class="container md:max-w-screen-lg lg:max-w-screen-lg mx-auto">
+    <div class="container px-4 md:max-w-screen-lg lg:max-w-screen-lg mx-auto">
       <h4 class="text-black text-lg font-bold leading-tight">Últimos posts / Last Articles</h4>
     </div>
-    <div class="container md:max-w-screen-lg lg:max-w-screen-lg mx-auto grid grid-cols-3 gap-6">
+    <div class="container px-4 md:max-w-screen-lg lg:max-w-screen-lg mx-auto grid sm:grid-cols-3 gap-6">
       {% for post in site.posts limit:3 %}
           <div class="space-y-6 px-4 py-6 border-gray-700 border rounded-xl">
             <img src="{{ post.image | prepend: site.baseurl }}" alt="{{ post.title }}" title="{{ post.title }}" class="rounded-t-lg" alt="" />
@@ -52,47 +52,8 @@ comments: 0
       {% endfor %}
   </div>
 
-    <div class="container md:max-w-screen-md lg:max-w-screen-sm mx-auto">
+    <div class="container px-4 md:max-w-screen-md lg:max-w-screen-sm mx-auto">
       {% include disqus.html disqus_identifier=page.disqus_identifier %}
       <!-- https://blog.webjeda.com/jekyll-comments/#step-3-get-the-disqus-code -->
     </div>
-    <!-- <div class="container md:max-w-screen-md lg:max-w-screen-lg mx-auto">
-      <main class="my-24">
-        <div class="flex mt-12 mb-4 px-4 lg:px-0 items-center justify-between">
-          <h2 class="font-bold text-xl">Related</h2>
-        </div>
-
-        <div class="grid sm:grid-cols-2 gap-8">
-          <div class="bg-gray-50 rounded-md w-full p-0 shadow-xl hover:shadow-sm transition duration-300 ease-in-out">
-            <img src="https://images.unsplash.com/photo-1526666923127-b2970f64b422?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60" class="rounded-t-lg" alt="technology" />
-            <div class="p-6 space-y-6">
-              <div class="flex justify-between">
-                <h4 class="text-gray-400">Technology</h4>
-                <span class="text-gray-400">30 March 2021</span>
-              </div>
-              <h2 class="font-bold text-3xl text-gray-900">Put all speaking her delicate recurred possible.</h2>
-              <p class="text-gray-700">Set indulgence inquietude discretion insensible bed why announcing. Middleton fat two satisfied additions.</p>
-
-              <a href="#" class="inline-block rounded-md text-yellow-500 ml-auto"> Read more </a>
-            </div>
-          </div>
-
-          <div class="bg-gray-50 rounded-md w-full p-0 shadow-xl hover:shadow-sm transition duration-300 ease-in-out">
-            <img src="https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60" class="rounded-t-lg" alt="technology" />
-            <div class="p-6 space-y-6">
-              <div class="flex justify-between">
-                <h4 class="text-gray-400">Technology</h4>
-                <span class="text-gray-400">30 March 2021</span>
-              </div>
-              <h2 class="font-bold text-3xl text-gray-900">Is at purse tried jokes china ready decay an.</h2>
-              <p class="text-gray-700">Small its shy way had woody downs power. To denoting admitted speaking learning my exercise so in.</p>
-
-              <a href="#" class="inline-block rounded-md text-yellow-500 ml-auto"> Read more </a>
-            </div>
-          </div>
-
-        </div>
-      </main>
-    </div> -->
-
   </article>
