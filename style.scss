@@ -438,13 +438,12 @@ article {
     }
 }
 
-nav a {
+nav a.btn {
     display: inline-block;
     position: relative;
-    color: hsl(222, 25%, 14%);
   }
   
-  nav a::after {
+  nav a.btn::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -457,7 +456,7 @@ nav a {
     transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
   }
   
-  nav a:hover::after {
+  nav a.btn:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
