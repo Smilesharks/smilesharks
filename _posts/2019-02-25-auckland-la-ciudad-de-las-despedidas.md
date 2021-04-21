@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  Auckland, la ciudad de las despedidas
-date:   2021-03-10 11:28:37 +1300
-categories: blog
+title: Auckland, la ciudad de las despedidas
+date: 2019-02-25 11:28:37 +1300
 image: http://img.youtube.com/vi/3fiQ2R7WD_M/maxresdefault.jpg
+categories:
+  - Blog
+  - Video
 ---
 Un amigo una vez me dijo, hacer amigos acá es como encontrarse con un cachorro, te lo quieres quedar pero sabes que no te puedes encariñar.
 
@@ -26,8 +28,3 @@ Todos son muy amables y amistosos pero es por eso que creo que hay que aprovecha
 Por eso si estás pensando en emigrar, ten en cuenta los grandes sacrificios que hay que hacer, no lo digo como algo malo, ahora tengo amigos de todo el mundo, y vale la pena cada minuto que estás con ellos, por qué los quieres aprovechar al máximo.
 
 <iframe width="100%" height="350" src="http://www.youtube.com/embed/3fiQ2R7WD_M" frameborder="0" allowfullscreen></iframe>
-
-
-[![Video](http://img.youtube.com/vi/3fiQ2R7WD_M/maxresdefault.jpg)](http://www.youtube.com/watch?v=3fiQ2R7WD_M "Click para ver el video")
-
-[https://youtu.be/3fiQ2R7WD_M](https://youtu.be/3fiQ2R7WD_M)

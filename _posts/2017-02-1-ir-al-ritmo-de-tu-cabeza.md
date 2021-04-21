@@ -12,7 +12,7 @@ Siempre me da ansiedad por hacer cosas. Muchas veces no tengo idea de qué es, p
 
 Esta forma de ver la vida en realidad no es tan buena como uno se podría imaginar, porque tu mente despega y no sabes donde vas a terminar buscando una idea o imaginando como llevarla cabo, y de pronto te das cuenta de que ya son las 3 de la mañana y debes madrugar.
 
-![https://miro.medium.com/max/620/1*-D3ko2z4N5ytRHm90oUY3g.png](https://miro.medium.com/max/620/1*-D3ko2z4N5ytRHm90oUY3g.png)
+[![image](https://miro.medium.com/max/620/1*-D3ko2z4N5ytRHm90oUY3g.png)](https://miro.medium.com/max/620/1*-D3ko2z4N5ytRHm90oUY3g.png "Click para ver el link")
 
 Hacer más!
 
@@ -51,7 +51,7 @@ Volviendo al tema del blog, en todo este periodo he aprendido un par de cosas qu
 
 *No vas a creer la cantidad de gente que te puede ayudar o dar su opinión.*
 
-![https://miro.medium.com/max/990/1*EOKyaNjZLpIqUdoaXrsWZg.png](https://miro.medium.com/max/990/1*EOKyaNjZLpIqUdoaXrsWZg.png)
+[![image](https://miro.medium.com/max/990/1*EOKyaNjZLpIqUdoaXrsWZg.png)](https://miro.medium.com/max/990/1*EOKyaNjZLpIqUdoaXrsWZg.png "Click para ver el link")
 
 ### **Pero la principal es “Hacer”.**
 

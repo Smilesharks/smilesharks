@@ -7,7 +7,8 @@ categories:
   - Blog
   - Video
 ---
-[![intro video](https://img.youtube.com/vi/u8L7Sdg8rJY/0.jpg)](https://www.youtube.com/watch?v=u8L7Sdg8rJY)
+
+<iframe width="100%" height="350" src="http://www.youtube.com/embed/u8L7Sdg8rJY" frameborder="0" allowfullscreen></iframe>
 
 ¿Ansioso por el estreno de la nueva película de tu saga preferida? ¿No puedes decidirte cuál será la próxima película que iras a ver al cine?
 
