@@ -4,6 +4,7 @@ title:  "Los mejores canales de YouTube para aprender diseño UX/UI"
 date:   2021-03-10 11:28:37 +1300
 categories: sketch
 image: http://img.youtube.com/vi/5TF8JXvlInA/maxresdefault.jpg
+abstract: Hace tiempo que todo el mundo quiere aprender UX/UI design y no hay mejor manera que aprender de los mejores y en formato de video. estos son algunos pero estoy seguro de que hay más, puedes dejar alguna recomendación en los comentarios.
 ---
 Hace tiempo que todo el mundo quiere aprender UX/UI design y no hay mejor manera que aprender de los mejores y en formato de video. estos son algunos pero estoy seguro de que hay más, puedes dejar alguna recomendación en los comentarios.
 

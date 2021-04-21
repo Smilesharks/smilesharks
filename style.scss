@@ -16,7 +16,7 @@
 :root {
     --main-bg-color: #FF0F53;
     --main-bg-color-opa: #F583204D;
-  }
+}
 
 body {
     font-family: $helvetica;
@@ -146,7 +146,7 @@ article {
     strong {
         position: relative;
         font-weight: bold;
-      }
+    }
     
     strong span {
         z-index: 1;
@@ -154,21 +154,21 @@ article {
     }
     
     strong::after {
-      content: "";
-      position: absolute;
-      left: -0.1px;
-      right: -0.1px;
-      bottom: 0;
-      height: 100%;
-      transform: scaleY(.3);
-      transition: transform .6s cubic-bezier(0.53, 0.21, 0, 1);
-      transform-origin: bottom;
-      background-color: rgba(245, 131, 32, 0.5);
-      mix-blend-mode: multiply;
+    content: "";
+    position: absolute;
+    left: -0.1px;
+    right: -0.1px;
+    bottom: 0;
+    height: 100%;
+    transform: scaleY(.3);
+    transition: transform .6s cubic-bezier(0.53, 0.21, 0, 1);
+    transform-origin: bottom;
+    background-color: rgba(245, 131, 32, 0.5);
+    mix-blend-mode: multiply;
     }
     
     strong:hover::after {
-      transform: scaleY(1);
+    transform: scaleY(1);
     }
     em {
         font-style: italic;
@@ -178,48 +178,48 @@ article {
         margin: 0 0 20px;
         font-size: 17.5px;
         border-left: 5px solid #eee;
-      
+
         p:last-child, ul:last-child, ol:last-child {
-          margin-bottom: 0;
+            margin-bottom: 0;
         }
-      
+    
         footer, small, .small {
-          display: block;
-          font-size: 80%;
-          line-height: 1.42857143;
-          color: #777;
+            display: block;
+            font-size: 80%;
+            line-height: 1.42857143;
+            color: #777;
         }
-      
+
         footer:before, small:before, .small:before {
-          content: '\2014 \00A0';
+            content: '\2014 \00A0';
         }
-      }
-      
-      .blockquote-reverse, blockquote.pull-right {
+    }
+    
+    .blockquote-reverse, blockquote.pull-right {
         padding-right: 15px;
         padding-left: 0;
         text-align: right;
         border-right: 5px solid #eee;
         border-left: 0;
-      }
-      
-      .blockquote-reverse footer:before, blockquote.pull-right footer:before, .blockquote-reverse small:before, blockquote.pull-right small:before, .blockquote-reverse .small:before, blockquote.pull-right .small:before {
+    }
+    
+    .blockquote-reverse footer:before, blockquote.pull-right footer:before, .blockquote-reverse small:before, blockquote.pull-right small:before, .blockquote-reverse .small:before, blockquote.pull-right .small:before {
         content: '';
-      }
-      
-      .blockquote-reverse footer:after, blockquote.pull-right footer:after, .blockquote-reverse small:after, blockquote.pull-right small:after, .blockquote-reverse .small:after {
+    }
+    
+    .blockquote-reverse footer:after, blockquote.pull-right footer:after, .blockquote-reverse small:after, blockquote.pull-right small:after, .blockquote-reverse .small:after {
         content: '\00A0 \2014';
-      }
-      
-      blockquote {
+    }
+    
+    blockquote {
         &.pull-right .small:after {
-          content: '\00A0 \2014';
+            content: '\00A0 \2014';
         }
-      
+    
         &:before, &:after {
-          content: "";
+            content: "";
         }
-      }
+    }
     // blockquote {
     //     background: #3e3e3e;
     //     color: $main;
@@ -441,9 +441,9 @@ article {
 nav a.btn {
     display: inline-block;
     position: relative;
-  }
-  
-  nav a.btn::after {
+}
+
+nav a.btn::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -454,12 +454,12 @@ nav a.btn {
     background-color: var(--main-bg-color);
     transform-origin: bottom right;
     transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
-  }
-  
-  nav a.btn:hover::after {
+}
+nav a.btn:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
-  }
+}
+    
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
