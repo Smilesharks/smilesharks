@@ -49,7 +49,7 @@ defaults:
       author: "Ariel"
       layout: "default"
       author_pic: "https://miro.medium.com/fit/c/262/262/0*j1z_FcHb_vjgf5cf.jpeg"
-      image: https://source.unsplash.com/1280x720/?code
+      image: https://source.unsplash.com/1280x720/?minimal
       # image: /assets/img/img.svg
 
 permalink: pretty
