@@ -3,14 +3,14 @@ var	animation = bodymovin.loadAnimation({
 	renderer: 'svg',
 	loop: false,
 	autoplay: true,
-	path: '/assets/lottie/data.json'
+	path: '{{ base.url | prepend: site.url }}/assets/lottie/data.json'
 })
 var	animation = bodymovin.loadAnimation({
 	container: document.getElementById('kiora'),
 	renderer: 'svg',
 	loop: false,
 	autoplay: true,
-	path: '/assets/lottie/ac.json'
+	path: '{{ base.url | prepend: site.url }}/assets/lottie/ac.json'
 })
 var	animation = bodymovin.loadAnimation({
 	container: document.getElementById('link'),
