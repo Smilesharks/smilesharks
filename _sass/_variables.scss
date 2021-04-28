@@ -21,10 +21,7 @@ $lightGray: #eee;
 $white: #fff;
 
 // Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
-$body:"Open Sans";
+$body: 'Inter', sans-serif;
 // $headings:;
 // Mobile breakpoints
 @mixin border{
