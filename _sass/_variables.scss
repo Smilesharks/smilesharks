@@ -20,6 +20,128 @@ $gray: #666;
 $lightGray: #eee;
 $white: #fff;
 
+
+
+:root {
+    --main-bg-color: #FF0F53;
+    --main-bg-color-50: #FFF4F7;
+    --main-bg-color-100: #FFDBE5;
+    --main-bg-color-200: #FFA8C1;
+    --main-bg-color-300: #FF759C;
+    --main-bg-color-400: #FF4278;
+    --main-bg-color-500: #FF0F53;
+    --main-bg-color-600: #DB003E;
+    --main-bg-color-700: #A80030;
+    --main-bg-color-800: #750021;
+    --main-bg-color-900: #420013;
+}
+
+.bg-yellow-50, .bg-yellow-100:hover {
+    background-color: var(--main-bg-color-50);
+}
+.bg-yellow-100, .bg-yellow-50:hover {
+    background-color: var(--main-bg-color-100);
+}
+.bg-yellow-200, .bg-yellow-100:hover {
+    background-color: var(--main-bg-color-200);
+}
+.bg-yellow-300, .bg-yellow-200:hover {
+    background-color: var(--main-bg-color-300);
+}
+.bg-yellow-400, .bg-yellow-300:hover {
+    background-color: var(--main-bg-color-400);
+}
+.bg-yellow-500, .bg-yellow-400:hover {
+    background-color: var(--main-bg-color-500);
+}
+.bg-yellow-600, .bg-yellow-500:hover {
+    background-color: var(--main-bg-color-600);
+}
+.bg-yellow-700, .bg-yellow-600:hover {
+    background-color: var(--main-bg-color-700);
+}
+.bg-yellow-800, .bg-yellow-700:hover {
+    background-color: var(--main-bg-color-800);
+}
+.bg-yellow-900, .bg-yellow-800:hover {
+    background-color: var(--main-bg-color-900);
+}
+
+
+.text-yellow-50, .text-yellow-100:hover {
+    color: var(--main-bg-color-50);
+}
+.text-yellow-100, .text-yellow-10:hover {
+    color: var(--main-bg-color-100);
+}
+.text-yellow-200, .text-yellow-10:hover {
+    color: var(--main-bg-color-200);
+}
+.text-yellow-300, .text-yellow-10:hover {
+    color: var(--main-bg-color-300);
+}
+.text-yellow-400, .text-yellow-10:hover {
+    color: var(--main-bg-color-400);
+}
+.text-yellow-500, .text-yellow-10:hover {
+    color: var(--main-bg-color-500);
+}
+.text-yellow-600, .text-yellow-10:hover {
+    color: var(--main-bg-color-600);
+}
+.text-yellow-700, .text-yellow-10:hover {
+    color: var(--main-bg-color-700);
+}
+.text-yellow-800, .text-yellow-10:hover {
+    color: var(--main-bg-color-800);
+}
+.text-yellow-900, .text-yellow-10:hover {
+    color: var(--main-bg-color-900);
+}
+
+
+
+.border-yellow-50, .border-yellow-200:hover {
+    border-color: var(--main-bg-color-50);
+    border-style: solid;
+}
+.border-yellow-100, .border-yellow-300:hover {
+    border-color: var(--main-bg-color-100);
+    border-style: solid;
+}
+.border-yellow-200, .border-yellow-400:hover {
+    border-color: var(--main-bg-color-200);
+    border-style: solid;
+}
+.border-yellow-300, .border-yellow-500:hover {
+    border-color: var(--main-bg-color-300);
+    border-style: solid;
+}
+.border-yellow-400, .border-yellow-600:hover {
+    border-color: var(--main-bg-color-400);
+    border-style: solid;
+}
+.border-yellow-500, .border-yellow-700:hover {
+    border-color: var(--main-bg-color-500);
+    border-style: solid;
+}
+.border-yellow-600, .border-yellow-800:hover {
+    border-color: var(--main-bg-color-600);
+    border-style: solid;
+}
+.border-yellow-700, .border-yellow-900:hover {
+    border-color: var(--main-bg-color-700);
+    border-style: solid;
+}
+.border-yellow-800, .border-yellow-900:hover {
+    border-color: var(--main-bg-color-800);
+    border-style: solid;
+}
+.border-yellow-900, .border-yellow-900:hover {
+    border-color: var(--main-bg-color-900);
+    border-style: solid;
+}
+
 // Font stacks
 $body: 'Inter', sans-serif;
 // $headings:;

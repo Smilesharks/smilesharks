@@ -1,7 +1,7 @@
 <section>
   <div class="thumb-container">
     {% for projects in site.projects %}
-      <p>{{ projects.content | markdownify }}</p>
+      {{ projects.content | markdownify }}
     {% endfor %}
   </div>
 </section>  
