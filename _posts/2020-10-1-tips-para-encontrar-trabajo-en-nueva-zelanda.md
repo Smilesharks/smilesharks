@@ -9,7 +9,7 @@ image: http://img.youtube.com/vi/WpiQOge7cmE/maxresdefault.jpg
 En este video revisaremos algunos tips y técnicas que utilizo para mejorar las posibilidades de encontrar trabajo en Nueva Zelanda.
 Soy diseñador y actualmente vivo en Auckland y cada vez que puedo hago videos sobre mi  experiencia tras venir a trabajar desde Chile a Nueva Zelanda.
 
-<iframe width="100%" height="350" src="http://www.youtube.com/embed/WpiQOge7cmE" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="350" src="https://www.youtube.com/embed/WpiQOge7cmE" frameborder="0" allowfullscreen></iframe>
 
 * 0:00​ Introducción
 * 1:56​ Tips previos
