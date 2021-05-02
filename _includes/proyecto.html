@@ -2,6 +2,38 @@
   <div class="thumb-container">
     {% for projects in site.projects %}
       {{ projects.content | markdownify }}
+      <div class="bg04 py-24 bg-gray-800 text-white ">
+        <div class="container mx-auto max-w-screen-xl ">
+          <div class="grid grid-cols-3 gap-12 items-center">
+            <div class="space-y-6">
+                <p> {{ projects.category }} </p>
+                <div class="text-3xl">
+                  <h2>{{ projects.title }}</h2>
+                </div>
+                <p> {{ projects.description }} </p>
+                <ul class="text-xs">
+                  <li>Client / {{ projects.client }}</li>
+                  <li>Platform / {{ projects.platform }}</li>
+                  <li>Agency / {{ projects.agency }}</li>
+                  <li>Role / {{ projects.role }}</li>
+                </ul>
+              </div>
+            <div class="grid grid-cols-1 col-gap-6 space-y-6 col-span-2">
+                <div class="space-y-6">
+                <h4>hola</h4>
+                <div class="grid grid-cols-3 gap-6">
+                  {% capture ipath %}{{ projects.folderurl }}{% endcapture %}
+                  {% for image in site.static_files %}
+                      {% if image.path contains ipath %}
+                          <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+                      {% endif %}
+                  {% endfor %}
+                  </div>
+                </div>
+          </div>
+          </div>
+        </div>
+      </div>
     {% endfor %}
   </div>
 </section>  

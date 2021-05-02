@@ -34,11 +34,13 @@ jekyll_admin:
   homepage: "pages"
 
 collections:
-  # posts:
-  #   output: true
   projects:
     output: true
-    # permalink: /:path
+    permalink: /projects/:name
+  defaults:
+      values:
+        layout: "pro"
+
 
 
 defaults:
