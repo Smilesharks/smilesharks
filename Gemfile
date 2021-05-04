@@ -22,6 +22,8 @@ group :jekyll_plugins do
   gem "jekyll-watch"
   gem 'jekyll-menus', '~> 0.6.1'
   gem "jekyll-paginate"
+  gem 'jekyll-thumb'
+
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
