@@ -25,7 +25,7 @@
                   {% capture ipath %}{{ projects.folderurl }}{% endcapture %}
                   {% for image in site.static_files %}
                       {% if image.path contains ipath %}
-                          <img thumb  src="{{ site.baseurl }}{{ image.path }}" width="100" alt="image" />
+                          {% thumb src=image.path width="300" %}
                       {% endif %}
                   {% endfor %}
                   </div>
@@ -36,4 +36,4 @@
       </div>
     {% endfor %}
   </div>
-</section>
+</section>  
