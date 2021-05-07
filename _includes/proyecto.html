@@ -1,39 +1,84 @@
 <section>
-  <div class="thumb-container">
-    {% for projects in site.projects %}
-      {{ projects.content | markdownify }}
-      <div class="bg04 py-24 bg-gray-800 text-white ">
-        <div class="container mx-auto max-w-screen-xl ">
-          <div class="grid grid-cols-3 gap-12 items-center">
-            <div class="space-y-6">
-                <p> {{ projects.category }} </p>
-                <div class="text-3xl">
-                  <h2>{{ projects.title }}</h2>
+    <div class="thumb-container">
+        {% for projects in site.projects %} {{ projects.content | markdownify }}
+        <div class="bg04 py-24 bg-gray-800 text-white">
+            <div class="container mx-auto max-w-screen-xl">
+                <div class="grid grid-cols-3 gap-12">
+                    <div class="space-y-6">
+                        <div class="space-y-6">
+                            <img class="" src="{{ projects.logourl | prepend: site.baseurl }}" alt="{{ projects.title }}" title="{{ projects.title }}" />
+                            <div class="space-y-2">
+                                <a class="text-yellow-500" target="_self" title="{{ projects.category }}" alt="{{ projects.category }}" href="{{ projects.category | slugize }}">{{ projects.category }}</a>
+                                <h2 class="text-xl">{{ projects.title }}</h2>
+                            </div>
+                        </div>
+                        <!-- <img src="{{ projects.featureimg | prepend: site.baseurl }}" alt="{{ projects.title }}" title="{{ projects.title }}" /> -->
+                        <h2 class="text-xl uppercase space-x-2">
+                            <span>Description</span>
+                        </h2>
+                        <p>{{ projects.description }}</p>
+                        <ul class="text-xs pl-4">
+                            <li class="list-none">Client / {{ projects.client }}</li>
+                            <li class="list-none">Platform / {{ projects.platform }}</li>
+                            <li class="list-none">Agency / {{ projects.agency }}</li>
+                            <li class="list-none">Role / {{ projects.role }}</li>
+                        </ul>
+
+                        <!-- Descripcion del problema -->
+                        <div class="max-w-4xl mx-auto border-2 border-pink-500 rounded-xl border-t-8">
+                            <!-- Promblema -->
+                            <div class="faq">
+                                <div class="flex flex-col">
+                                    <h2 class="flex font-semibold text-xl uppercase space-x-2">
+                                        <span>The problem</span>
+                                    </h2>
+                                </div>  
+                                <div class="font-light leading-loose">
+                                    <p class="text-sm">{{ projects.problem }}</p>
+                                </div>
+                            </div>
+                            <!-- El objetivo -->
+                            <div class="faq">
+                                <header class="flex flex-col">
+                                    <h2 class="flex font-semibold text-xl uppercase space-x-2">
+                                        <span>The goal</span>
+                                    </h2>
+                                </header>
+                                <div class="font-light leading-loose">
+                                    <p class="text-sm">{{ projects.goal }}</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {% if projects.demolink And projects.demolink != "" And projects.demolink != nil %}
+                            <a class="link" target="_blank" title="{{ projects.title }} demostracion" alt="Ver {{ projects.title }} demo" href="{{ projects.demolink }}">Demo</a>
+                        {% else %} Demo unavailable {% endif %}
+                    </div>
+                    <div class="grid grid-cols-1 col-gap-6 space-y-6 col-span-2">
+                        <div class="space-y-6">
+                            <h4>Preview</h4>
+                            <div class="grid grid-cols-3 gap-6">
+                                {% capture ipath %}{{ projects.folderurl }}{% endcapture %} {% for image in site.static_files %} {% if image.path contains ipath %} {% thumb class='rounded-lg' src=image.path width="300" %} {% endif %} {% endfor %}
+                            </div>
+                        </div>
+
+                        {% if projects.videourl And projects.videourl != "" And projects.videourl != nil %}
+                        <h4>Video</h4>
+                        <div class="grid grid-cols-1 gap-6">
+                            <div class="mx-auto space-y-6 divide-y-4 divide-gray-100 divide-solid">
+                                <video autoplay muted loop class="w-full" controls>
+                                    <source src="{{ projects.videourl | prepend: site.baseurl }}" type="video/mp4" />
+                                    <source src="{{ projects.videourl | prepend: site.baseurl }}" type="video/ogg" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        {% endif %}                                
+
+                    </div>
                 </div>
-                <p> {{ projects.description }} </p>
-                <ul class="text-xs">
-                  <li>Client / {{ projects.client }}</li>
-                  <li>Platform / {{ projects.platform }}</li>
-                  <li>Agency / {{ projects.agency }}</li>
-                  <li>Role / {{ projects.role }}</li>
-                </ul>
-              </div>
-            <div class="grid grid-cols-1 col-gap-6 space-y-6 col-span-2">
-                <div class="space-y-6">
-                <h4>hola</h4>
-                <div class="grid grid-cols-3 gap-6">
-                  {% capture ipath %}{{ projects.folderurl }}{% endcapture %}
-                  {% for image in site.static_files %}
-                      {% if image.path contains ipath %}
-                          {% thumb src=image.path width="300" %}
-                      {% endif %}
-                  {% endfor %}
-                  </div>
-                </div>
-          </div>
-          </div>
+            </div>
         </div>
-      </div>
-    {% endfor %}
-  </div>
-</section>  
+        {% endfor %}
+    </div>
+</section>
