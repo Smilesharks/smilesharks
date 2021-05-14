@@ -22,7 +22,9 @@ plugins:
   - jekyll-feed
   - jekyll-menus
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-paginate
+  - jekyll-paginate 
+  - jekyll-sitemap
+  # - jekyll-seo-tag
   # - jekyll-postcss
 jekyll_admin:
   hidden_links:

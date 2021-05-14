@@ -58,7 +58,12 @@
                         <div class="space-y-6">
                             <h4>Preview</h4>
                             <div class="grid grid-cols-3 gap-6">
-                                {% capture ipath %}{{ projects.folderurl }}{% endcapture %} {% for image in site.static_files %} {% if image.path contains ipath %} {% thumb class='rounded-lg' src=image.path width="300" %} {% endif %} {% endfor %}
+                                {% capture ipath %}{{ projects.folderurl }}{% endcapture %}
+                                {% for image in site.static_files %}
+                                    {% if image.path contains ipath %}
+                                        <img class="rounded-lg" src="{{ image.path }}" alt="">
+                                    {% endif %}
+                                {% endfor %}
                             </div>
                         </div>
 

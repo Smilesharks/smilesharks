@@ -22,7 +22,9 @@ group :jekyll_plugins do
   gem "jekyll-watch"
   gem 'jekyll-menus', '~> 0.6.1'
   gem "jekyll-paginate"
-  gem 'jekyll-thumb'
+  gem 'jekyll-sitemap'
+  # gem 'jekyll-seo-tag'
+  # gem 'jekyll-thumb'
 
 end
 
