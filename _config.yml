@@ -40,6 +40,9 @@ collections:
   defaults:
       values:
         layout: "pro"
+  minipro:
+    output: true
+    permalink: /minipro/:name
 
 
 
