@@ -1,7 +1,7 @@
 import 'jquery'
 import 'alpinejs'
 import 'lottie-web'
-import 'lity'
+// import '../css/app.css'
 
 
 console.log("Hello, World!");
