@@ -61,7 +61,7 @@
                                 {% capture ipath %}{{ projects.folderurl }}{% endcapture %}
                                 {% for image in site.static_files %}
                                     {% if image.path contains ipath %}
-                                        <img class="rounded-lg" src="{{ image.path }}" alt="">
+                                        <img data-lity class="rounded-lg" src="{{ image.path }}" alt="">
                                     {% endif %}
                                 {% endfor %}
                             </div>
