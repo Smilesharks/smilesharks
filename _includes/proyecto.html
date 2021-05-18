@@ -1,4 +1,4 @@
-<section>
+<section id="portfolio">
     <div class="thumb-container">
         {% for projects in site.projects %} {{ projects.content | markdownify }}
         <div class="py-24 text-white bg-gray-800 bg04">
@@ -61,8 +61,8 @@
                                 {% capture ipath %}{{ projects.folderurl }}{% endcapture %}
                                 {% for image in site.static_files %}
                                     {% if image.path contains ipath %}
-                                        <a @click="$dispatch('img-modal', {  imgModalSrc: '{{ image.path }}', imgModalDesc: '{{ projects.description }}' })" class="cursor-pointer">
-                                            <img alt="Placeholder" class="w-full object-fit" src="{{ image.path }}">
+                                        <a @click="$dispatch('img-modal', {  imgModalSrc: '{{ image.path }}', imgModalDesc: '{{ projects.description }}' })" class="tile cursor-pointer">
+                                            <img alt="Placeholder" class="w-full object-fit rounded-lg" src="{{ image.path }}">
                                         </a>
                                         <!-- <img class="rounded-lg" src="{{ image.path }}" alt=""> -->
                                     {% endif %}
@@ -113,7 +113,7 @@
         </template>
       </div>
       
-      <div x-data="{}" class="px-2">
+      <!-- <div x-data="{}" class="px-2">
         <div class="flex -mx-2">
           <div class="w-1/6 px-2">
             <div class="bg-gray-400">
@@ -124,4 +124,4 @@
           </div>
 
         </div>
-      </div>
+      </div> -->
