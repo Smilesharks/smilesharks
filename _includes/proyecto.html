@@ -62,9 +62,8 @@
                                 {% for image in site.static_files %}
                                     {% if image.path contains ipath %}
                                         <a @click="$dispatch('img-modal', {  imgModalSrc: '{{ image.path }}', imgModalDesc: '{{ projects.description }}' })" class="tile cursor-pointer">
-                                            <img alt="Placeholder" class="w-full object-fit rounded-lg" src="{{ image.path }}">
+                                            <img alt="Placeholder" class="w-full object-fit rounded-lg" src="{{ image.path | remove: '/assets/img/pro' | prepend: '/assets/img/thumbs' }}">
                                         </a>
-                                        <!-- <img class="rounded-lg" src="{{ image.path }}" alt=""> -->
                                     {% endif %}
                                 {% endfor %}
                             </div>
