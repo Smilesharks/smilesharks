@@ -1,7 +1,7 @@
 var getUrl = window.location.host;
-var pro1 = 'http://';
+var pro1 = 'https://';
 var http1 = (pro1 += getUrl);
-var pro2 = 'http://';
+var pro2 = 'https://';
 var http2 = (pro2 += getUrl);
 var kiora = '/assets/lottie/data.json';
 var bm = '/assets/lottie/ac.json';
