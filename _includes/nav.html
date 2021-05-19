@@ -1,8 +1,12 @@
+{% if page.url == "/portfolio/" %}
+<nav role="navigation" class="w-full text-gray-100 sm:absolute bg-gray-900 sm:bg-transparent">
+{% else %}
 <nav role="navigation" class="w-full text-gray-100 bg-gray-900">
+{% endif %}
   <div x-data="{ open: false }" class="container px-4 flex flex-col mx-auto max-w-7xl md:items-center md:justify-between md:flex-row">
       <div class="flex flex-row items-center justify-between py-4">
           <!-- Logo -->
-          <a href="{{ site.url }}" class="flex items-center col-span-2 font-medium transition duration-500 ease-in-out transform lg:items-center sm:hover:-translate-y-1">
+          <a href="{{ site.baseurl }}" class="flex items-center col-span-2 font-medium transition duration-500 ease-in-out transform lg:items-center sm:hover:-translate-y-1">
             {% include logo-mini.html %}              
           </a>
           <!-- boton de cierre en mobiles -->

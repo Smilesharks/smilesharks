@@ -492,7 +492,10 @@ nav a.btn:hover::after {
 #kiora svg, #bm svg {
     width: auto !important;
 }
-
+#bm svg {
+    height: 36px !important;
+    width: auto !important;
+}
 html {
     scroll-behavior: smooth;
 }
