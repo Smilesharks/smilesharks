@@ -2,7 +2,7 @@
 layout: post
 title: Como encontré trabajo en Nueva Zelanda
 date: 2019-07-4 21:10:13 GMT+12
-categories: Nueva Zelanda
+categories: Nueva-Zelanda
 image: http://img.youtube.com/vi/fk07bxv2da4/maxresdefault.jpg
 ---
 

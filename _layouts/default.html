@@ -29,12 +29,12 @@ pagination:
 
     <!-- blog -->
     <div class="container px-4 md:max-w-screen-md lg:max-w-screen-lg mx-auto">
-        <main class="py-24">
+        <main class="py-12 space-y-6">
             <!-- end featured section -->
 
             <!-- recent posts -->
-            <div class="flex mb-4 px-4 lg:px-0 items-center justify-between">
-                <h2 class="font-bold text-xl">Últimas publicaciones</h2>
+            <div class="flex px-4 lg:px-0 items-center justify-between">
+                <h2 class="font-bold text-2xl">Últimas publicaciones</h2>
             </div>
 
             <div class="grid sm:grid-cols-2 gap-8">
@@ -43,15 +43,14 @@ pagination:
                 <a href="{{ post.url | absolute_url }}">
                     <div class="bg-gray-50 rounded-md w-full p-0 hover:shadow-2xl shadow-lg transition transform hover:-translate-y-1 duration-300 ease-in-out">
                         <img src="{{ post.image | prepend: site.baseurl }}" alt="{{ post.title }}" title="{{ post.title }}" class="rounded-t-lg" alt="" />
-                        <div class="p-6 space-y-6">
+                        <div class="p-6 space-y-4">
                             <div class="flex justify-between">
-                                <h4 class="bg-yellow-200 hover:bg-yellow-200 text-sm text-yellow-800 px-2 py-1 rounded-md cursor-pointer">{{ post.categories | first }}</h4>
+                                <span class="bg-yellow-200 hover:bg-yellow-200 text-sm text-yellow-800 px-2 rounded-md cursor-pointer">{{ post.categories | first }}</span>
                                 <span class="text-gray-400">{{ post.date | date: "%B %e, %Y" }}</span>
                             </div>
-                            <h2 class="font-bold text-3xl text-gray-900">{{ post.title }}</h2>
-                            <p class="text-gray-700">{{ post.excerpt | strip_html | strip_newlines | truncate: 156 }}</p>
-
-                            <span class="inline-block rounded-md text-yellow-500 ml-auto"> Read more </span>
+                            <h2 class=" font-bold text-xl text-gray-900">{{ post.title }}</h2>
+                            <div class="text-gray-700">{{ post.excerpt | strip_html | strip_newlines | truncate: 100 }}</div>
+                            <div class="block rounded-md text-yellow-500 ml-auto"> Read more </div>
                         </div>
                     </div>
                 </a>
@@ -69,7 +68,6 @@ pagination:
                     <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
                 </svg>
             </a>
-            {% else %}
 
             {% endif %}
 

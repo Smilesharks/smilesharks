@@ -1,3 +1,11 @@
+var getUrl = window.location.host;
+var pro1 = 'http://';
+var http1 = (pro1 += getUrl);
+var pro2 = 'http://';
+var http2 = (pro2 += getUrl);
+var kiora = '/assets/lottie/data.json';
+var bm = '/assets/lottie/ac.json';
+
 ScrollReveal().reveal('.ocuspocus-1', { duration: 1500, delay: 500 });
 ScrollReveal().reveal('.ocuspocus-2', { duration: 1500, delay: 1000 });
 ScrollReveal().reveal('.ocuspocus-3', { duration: 1500, delay: 1500 });
@@ -7,23 +15,16 @@ ScrollReveal().reveal('.tile, .skills-item, .skills-icon', { interval: 200, scal
 
 
 var	animation = bodymovin.loadAnimation({
-	container: document.getElementById('kiora'),
-	renderer: 'svg',
-	loop: false,
-	autoplay: true,
-	path: '../assets/lottie/data.json'
-})
-var	animation = bodymovin.loadAnimation({
 	container: document.getElementById('bm'),
 	renderer: 'svg',
 	loop: false,
 	autoplay: true,
-	path: '../assets/lottie/ac.json'
-})
+	path: http1 += bm,
+});
 var	animation = bodymovin.loadAnimation({
-	container: document.getElementById('link'),
+	container: document.getElementById('kiora'),
 	renderer: 'svg',
-	loop: true,
+	loop: false,
 	autoplay: true,
-	path: 'https://assets9.lottiefiles.com/packages/lf20_ozmeOp/Minimize.json'
-})
+	path: http2 += kiora,
+});
