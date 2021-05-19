@@ -24,7 +24,7 @@ plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-paginate 
   - jekyll-sitemap
-  - expand_nested_variable_filter
+  - jekyll-email-protect
   # - jekyll-seo-tag
   # - jekyll-postcss
 jekyll_admin:

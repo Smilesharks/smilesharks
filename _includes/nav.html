@@ -34,7 +34,7 @@
           {% endif %}
         {% endfor %}
         <a class="btn text-white hover:text-gray-300 px-3 py-2 rounded-mds sm:text-sm text-xl font-medium" href="/portfolio">Portfolio</a>
-        <a class="btn text-white hover:text-gray-300 px-3 py-2 rounded-mds sm:text-sm text-xl font-medium" href="mailto:arielcerdahernandez@gmail.com">Contacto</a>
+        <a class="btn text-white hover:text-gray-300 px-3 py-2 rounded-mds sm:text-sm text-xl font-medium" href="mailto:{{ site.email | encode_email }}" title="Contact me"">Contacto</a>
           <!-- Menu desplegable -->
           <!-- <div @click.away="open = false" class="relative" x-data="{ open: false }">
               <button

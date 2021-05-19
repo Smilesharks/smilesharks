@@ -26,7 +26,7 @@ GEM
     ethon (0.14.0)
       ffi (>= 1.15.0)
     eventmachine (1.2.7)
-    execjs (2.8.0)
+    execjs (2.8.1)
     faraday (1.4.1)
       faraday-excon (~> 1.1)
       faraday-net_http (~> 1.0)
@@ -126,6 +126,7 @@ GEM
       rouge (>= 2.0, < 4.0)
     jekyll-default-layout (0.1.4)
       jekyll (~> 3.0)
+    jekyll-email-protect (1.1.0)
     jekyll-feed (0.13.0)
       jekyll (>= 3.7, < 5.0)
     jekyll-gist (1.5.0)
@@ -222,9 +223,9 @@ GEM
     minitest (5.14.4)
     multi_json (1.15.0)
     multipart-post (2.1.1)
-    nokogiri (1.11.3-arm64-darwin)
+    nokogiri (1.11.4-arm64-darwin)
       racc (~> 1.4)
-    nokogiri (1.11.3-x86_64-darwin)
+    nokogiri (1.11.4-x86_64-darwin)
       racc (~> 1.4)
     octokit (4.21.0)
       faraday (>= 0.9)
@@ -293,6 +294,7 @@ DEPENDENCIES
   github-pages-health-check (~> 1.16.1)
   jekyll (~> 3.9.0)
   jekyll-admin
+  jekyll-email-protect
   jekyll-feed (~> 0.12)
   jekyll-menus (~> 0.6.1)
   jekyll-paginate
