@@ -23,6 +23,7 @@ group :jekyll_plugins do
   gem 'jekyll-menus', '~> 0.6.1'
   gem "jekyll-paginate"
   gem 'jekyll-sitemap'
+  gem 'expand_nested_variable_filter'
   # gem 'jekyll-seo-tag'
   # gem 'jekyll-thumb'
 

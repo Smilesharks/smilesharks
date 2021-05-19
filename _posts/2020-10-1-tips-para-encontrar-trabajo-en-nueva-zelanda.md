@@ -3,7 +3,9 @@ layout: post
 title: Tips para encontrar trabajo en Nueva Zelanda
 date: 2020-10-17 21:10:13 GMT+12
 categories: Nueva-Zelanda
-image: http://img.youtube.com/vi/WpiQOge7cmE/maxresdefault.jpg
+ytid: WpiQOge7cmE
+# image: http://img.youtube.com/vi/WpiQOge7cmE/maxresdefault.jpg
+image: "http://img.youtube.com/vi/{{ytid}}/maxresdefault.jpg"
 ---
 
 En este video revisaremos algunos tips y técnicas que utilizo para mejorar las posibilidades de encontrar trabajo en Nueva Zelanda.
