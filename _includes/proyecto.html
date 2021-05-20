@@ -11,17 +11,12 @@
                         <a class="block text-yellow-500" target="_self" title="{{ projects.category }}" alt="{{ projects.category }}" href="{{ projects.category | slugize }}">{{ projects.category }}</a>
                     </div>
 
+                    <img src="{{ projects.featureimg | prepend: site.baseurl }}" alt="{{ projects.title }}" title="{{ projects.title }}" />
+
                     <h2 class="space-x-2 text-2xl uppercase">
                         <span>Description</span>
                     </h2>
                     <p class="text-base">{{ projects.description }}</p>
-                    <ul class="text-base pl-4 text-gray-200">
-                        <li>Client / {{ projects.client }}</li>
-                        <li>Platform / {{ projects.platform }}</li>
-                        <li>Agency / {{ projects.agency }}</li>
-                        <li>Role / {{ projects.role }}</li>
-                    </ul>
-
                     <div class="space-y-6">
                         <div x-data="{ isOpen: false }">
                             <button @click='isOpen = !isOpen' class=" flex flex-col w-full focus:outline-none">
@@ -89,12 +84,18 @@
                         </a>                            
                         {% endif %}
                     </div>
+                    <ul class="text-base pl-4 text-gray-200">
+                        <li>Client / {{ projects.client }}</li>
+                        <li>Platform / {{ projects.platform }}</li>
+                        <li>Agency / {{ projects.agency }}</li>
+                        <li>Role / {{ projects.role }}</li>
+                    </ul>
                 </div>
                 <!-- Multimedia -->
                 <div class="flex flex-col sm:col-span-2 space-y-12">
                     <!-- Imagenes -->
                     <div class="space-y-6">
-                        <h4>Preview</h4>
+                        <h6>Previews design / Concept</h6>
                         <div x-data="{}"  class="grid grid-cols-2 sm:grid-cols-3 gap-6">
                             {% capture ipath %}{{ projects.folderurl }}{% endcapture %}
                             {% for image in site.static_files %}
@@ -109,7 +110,7 @@
                     <!-- Video -->
                     <div class="space-y-6">
                         {% if projects.videourl And projects.videourl != "" And projects.videourl != nil %}
-                        <h4>Video</h4>
+                        <h6>Video</h6>
                         <div class="flex flex-col">
                             <div class="mx-auto space-y-6 divide-y-4 divide-gray-100 divide-solid">
                                 <video autoplay muted loop class="w-full" controls>
