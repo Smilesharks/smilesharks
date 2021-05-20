@@ -1,6 +1,6 @@
 ---
 title: 🎞 VIDEO FOR SOCIAL
-category: VIDEO EDITOR
+category: Video-editor
 description: FireClip is a web application that allows you to create and edit highlights videos from live or recent programming, allowing content creators to publish and distribute content either on social media or their own video platforms.
 client: Convergente SPA
 platform: TV

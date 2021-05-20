@@ -1,6 +1,6 @@
 ---
 title: 🎬 ONLINE VIDEO EDITOR FOR PUBLISHERS
-category: UX / UI
+category: Ux-ui
 description: FireClip is a web application that allows you to create and edit highlights videos from live or recent programming, allowing content creators to publish and distribute content either on social media or their own video platforms.
 client: Convergente SPA
 platform: TV

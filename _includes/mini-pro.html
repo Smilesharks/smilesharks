@@ -1,7 +1,7 @@
 <section class=" py-24 bg-gray-800 text-white">
-  <div class="container mx-auto max-w-screen-xl">
-  <h3>MiniPro</h3>
-  <div class="grid grid-cols-4 gap-6">
+  <div class="container px-4 mx-auto max-w-screen-xl">
+  <h3>Small proyects</h3>
+  <div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
     {% for minipro in site.minipro %} {{ minipro.content | markdownify }}
     <a class=" space-y-8 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105" href="{{ minipro.link }}">
       <div class="relative shadow-xl hover:shadow-sm transition duration-500 ease-in-out">

@@ -1,77 +1,116 @@
 <section id="portfolio">
-    <div class="thumb-container">
-        {% for projects in site.projects %} {{ projects.content | markdownify }}
-        <div class="py-24 text-white bg-gray-800 bg04">
-            <div class="container max-w-screen-xl mx-auto">
-                <div class="grid grid-cols-3 gap-12">
+    {% for projects in site.projects %} {{ projects.content | markdownify }}
+    <div class="sm:py-24 py-6 text-white bg-gray-800 bg04">
+        <div class="container px-4 max-w-screen-xl mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-12">
+                <!-- Ficha tecnica -->
+                <div class="space-y-6">
+                    <!-- Logo -->
                     <div class="space-y-6">
-                        <div class="space-y-6">
-                            <img class="" src="{{ projects.logourl | prepend: site.baseurl }}" alt="{{ projects.title }}" title="{{ projects.title }}" />
-                            <div class="space-y-2">
-                                <a class="text-yellow-500" target="_self" title="{{ projects.category }}" alt="{{ projects.category }}" href="{{ projects.category | slugize }}">{{ projects.category }}</a>
-                                <!-- <h2 class="text-xl">{{ projects.title }}</h2> -->
-                            </div>
-                        </div>
-                        <!-- <img src="{{ projects.featureimg | prepend: site.baseurl }}" alt="{{ projects.title }}" title="{{ projects.title }}" /> -->
-                        <h2 class="space-x-2 text-xl uppercase">
-                            <span>Description</span>
-                        </h2>
-                        <p>{{ projects.description }}</p>
-                        <ul class="pl-4 text-xs">
-                            <li class="list-none">Client / {{ projects.client }}</li>
-                            <li class="list-none">Platform / {{ projects.platform }}</li>
-                            <li class="list-none">Agency / {{ projects.agency }}</li>
-                            <li class="list-none">Role / {{ projects.role }}</li>
-                        </ul>
-
-                        <!-- Descripcion del problema -->
-                        <div class="max-w-4xl mx-auto border-2 border-t-8 border-pink-500 rounded-xl">
-                            <!-- Promblema -->
-                            <div class="faq">
-                                <div class="flex flex-col">
-                                    <h2 class="flex space-x-2 text-xl font-semibold uppercase">
-                                        <span>The problem</span>
-                                    </h2>
-                                </div>  
-                                <div class="font-light leading-loose">
-                                    <p class="text-sm">{{ projects.problem }}</p>
-                                </div>
-                            </div>
-                            <!-- El objetivo -->
-                            <div class="faq">
-                                <header class="flex flex-col">
-                                    <h2 class="flex space-x-2 text-xl font-semibold uppercase">
-                                        <span>The goal</span>
-                                    </h2>
-                                </header>
-                                <div class="font-light leading-loose">
-                                    <p class="text-sm">{{ projects.goal }}</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        {% if projects.demolink And projects.demolink != "" And projects.demolink != nil %}
-                            <a class="link" target="_blank" title="{{ projects.title }} demostracion" alt="Ver {{ projects.title }} demo" href="{{ projects.demolink }}">Demo</a>
-                        {% else %} Demo unavailable {% endif %}
+                        <img src="{{ projects.logourl | prepend: site.baseurl }}" alt="{{ projects.title }}" title="{{ projects.title }}" />
+                        <a class="block text-yellow-500" target="_self" title="{{ projects.category }}" alt="{{ projects.category }}" href="{{ projects.category | slugize }}">{{ projects.category }}</a>
                     </div>
-                    <div class="grid grid-cols-1 col-span-2 col-gap-6 space-y-6">
-                        <div class="space-y-6">
-                            <h4>Preview</h4>
-                            <div x-data="{}"  class="grid grid-cols-3 gap-6">
-                                {% capture ipath %}{{ projects.folderurl }}{% endcapture %}
-                                {% for image in site.static_files %}
-                                    {% if image.path contains ipath %}
-                                        <a @click="$dispatch('img-modal', {  imgModalSrc: '{{ image.path }}', imgModalDesc: '{{ projects.description }}' })" class="tile cursor-pointer">
-                                            <img alt="Placeholder" class="w-full object-fit rounded-lg" src="{{ image.path | remove: '/assets/img/pro' | prepend: '/assets/img/thumbs' }}">
-                                        </a>
-                                    {% endif %}
-                                {% endfor %}
+
+                    <h2 class="space-x-2 text-2xl uppercase">
+                        <span>Description</span>
+                    </h2>
+                    <p class="text-base">{{ projects.description }}</p>
+                    <ul class="text-base pl-4 text-gray-200">
+                        <li>Client / {{ projects.client }}</li>
+                        <li>Platform / {{ projects.platform }}</li>
+                        <li>Agency / {{ projects.agency }}</li>
+                        <li>Role / {{ projects.role }}</li>
+                    </ul>
+
+                    <div class="space-y-6">
+                        <div x-data="{ isOpen: false }">
+                            <button @click='isOpen = !isOpen' class=" flex flex-col w-full focus:outline-none">
+                                
+                                <div class="flex flex-row items-center justify-between w-full">
+                                    <h4 class="m-0 text-xl uppercase hover:text-gray-200 ">The problem</h4>
+                                    <svg x-show="!isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                    </svg>
+                                    <svg x-show="isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+                                    </svg>
+                                </div>
+                            </button>
+                            <div x-show.transition.origin.top="isOpen"
+                            x-transition:enter="transition-all duration-500 transform ease-in-out"
+                            x-transition:enter-start="scale-75"
+                            x-transition:leave="transition-all duration-500 transform ease-in-out"
+                            x-transition:leave-end="opacity-0 scale-75 "
+                            class="bg-grey-lightest">
+                                <div class="py-4">
+                                    <p class="m-0">{{ projects.problem }}</p>
+                                </div>
                             </div>
                         </div>
 
+                        <div x-data="{ isOpen: false }">
+                            <button @click='isOpen = !isOpen' class="relative flex flex-col w-full focus:outline-none">
+                                
+                                <div class="relative flex flex-row items-center justify-between w-full">
+                                    <h4 class="m-0 text-xl uppercase"><span>The goal</span></h4>
+                                    <svg x-show="!isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                    </svg>
+                                    <svg x-show="isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+                                    </svg>
+                                </div>
+                            </button>
+                            <div x-show.transition.origin.top="isOpen"
+                            x-transition:enter="transition-all duration-500 transform ease-out"
+                            x-transition:enter-start="opacity-0 scale-75"
+                            x-transition:leave="transition-all duration-500 transform ease-in"
+                            x-transition:leave-end="opacity-0 scale-75 "
+                            class="bg-grey-lightest">
+                                <div class="py-4">
+                                    <p class="m-0">{{ projects.goal }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        {% if projects.demolink And projects.demolink != "" And projects.demolink != nil %}
+
+                            <a class="flex text-xl font-black leading-tight flex-row items-center justify-between w-full hover:text-yellow-700 text-yellow-500" target="_blank" title="{{ projects.title }} demostracion" alt="Ver {{ projects.title }} demo" href="{{ projects.demolink }}">
+                                <div class="">Demo</div>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6  " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>                                
+                            </a>
+                        {% else %}
+                        <a class="flex pointer-events-auto text-xl text-gray-500 font-black leading-tight flex-row items-center justify-between w-full" alt="Demo unavailable">
+                            <div class="link">Demo unavailable</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>                                
+                        </a>                            
+                        {% endif %}
+                    </div>
+                </div>
+                <!-- Multimedia -->
+                <div class="flex flex-col sm:col-span-2 space-y-12">
+                    <!-- Imagenes -->
+                    <div class="space-y-6">
+                        <h4>Preview</h4>
+                        <div x-data="{}"  class="grid grid-cols-2 sm:grid-cols-3 gap-6">
+                            {% capture ipath %}{{ projects.folderurl }}{% endcapture %}
+                            {% for image in site.static_files %}
+                                {% if image.path contains ipath %}
+                                    <a @click="$dispatch('img-modal', {  imgModalSrc: '{{ image.path }}', imgModalDesc: '{{ projects.description }}' })" class="tile cursor-pointer">
+                                        <img alt="Placeholder" class="w-full object-fit rounded-lg" src="{{ image.path | remove: '/assets/img/pro' | prepend: '/assets/img/thumbs' }}">
+                                    </a>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <!-- Video -->
+                    <div class="space-y-6">
                         {% if projects.videourl And projects.videourl != "" And projects.videourl != nil %}
                         <h4>Video</h4>
-                        <div class="grid grid-cols-1 gap-6">
+                        <div class="flex flex-col">
                             <div class="mx-auto space-y-6 divide-y-4 divide-gray-100 divide-solid">
                                 <video autoplay muted loop class="w-full" controls>
                                     <source src="{{ projects.videourl | prepend: site.baseurl }}" type="video/mp4" />
@@ -80,14 +119,13 @@
                                 </video>
                             </div>
                         </div>
-                        {% endif %}                                
-
+                        {% endif %}
                     </div>
                 </div>
             </div>
         </div>
-        {% endfor %}
     </div>
+    {% endfor %}
 </section>
 
 
@@ -111,16 +149,3 @@
           </div>
         </template>
       </div>
-      
-      <!-- <div x-data="{}" class="px-2">
-        <div class="flex -mx-2">
-          <div class="w-1/6 px-2">
-            <div class="bg-gray-400">
-              <a @click="$dispatch('img-modal', {  imgModalSrc: 'https://picsum.photos/640/480', imgModalDesc: 'Random Image One Description' })" class="cursor-pointer">
-                <img alt="Placeholder" class="w-full object-fit" src="https://picsum.photos/640/480">
-              </a>
-            </div>
-          </div>
-
-        </div>
-      </div> -->

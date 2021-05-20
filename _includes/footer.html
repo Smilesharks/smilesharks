@@ -16,7 +16,7 @@
                 <a class="{% if page.url == node.url %} text-yellow-500 {% endif %} text-gray-300 hover:text-yellow-500 text-sm font-medium" href="{{ node.url }}">
                     {{ node.title }}
                 </a>
-                <a class="text-gray-300 hover:text-yellow-500 text-sm font-medium" href="https://www.notion.so/smilesharks/Hola-Hi-959fbbe8a8b749f1a0d484164ac2ff43">Contacto</a>
+                <a class="text-gray-300 hover:text-yellow-500 text-sm font-medium" href="mailto:{{ site.email | encode_email }}">Contacto</a>
                 {% endif %} {% endif %} {% endfor %}
             </span>
             {% include icons.html %}
