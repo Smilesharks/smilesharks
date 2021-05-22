@@ -60,7 +60,8 @@ defaults:
       image: https://source.unsplash.com/1280x720/?minimal
       # image: /assets/img/img.svg
 
-permalink: pretty
+# permalink: pretty
+permalink: /:categories/:title/
 # Set the Sass partials directory, as we're using @imports
 sass:
   style: :expanded # You might prefer to minify using :compressed

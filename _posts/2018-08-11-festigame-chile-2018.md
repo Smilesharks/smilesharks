@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  FESTIGAME CHILE 2018
-date:   2018-08-11 21:10:13 GMT+12
-categories: Nueva-Zelanda
-image: http://img.youtube.com/vi/iSHb-4OuaMg/maxresdefault.jpg
+title: Festigame Chile 2018
+date: 2018-08-11 21:10:13 GMT+12
+categories: Video
+image: 'http://img.youtube.com/vi/iSHb-4OuaMg/maxresdefault.jpg'
 ---
 
 El pasado 3, 4 y 5 de agosto fui invitado a realizar una pequeña colaboración sobre Festigame chile 2018 junto a Tarreo.com, esto incluía sacar fotografías y hacer este video.

@@ -2,10 +2,8 @@
 layout: post
 title: Los primeros traumáticos días del viaje que (espero) cambiará mi vida.
 date: 2018-09-25 11:28:37 +1300
-image: http://img.youtube.com/vi/3fiQ2R7WD_M/maxresdefault.jpg
-categories:
-  - Blog
-  - Video
+categories: Nueva-Zelanda
+image: 'http://img.youtube.com/vi/3fiQ2R7WD_M/maxresdefault.jpg'
 ---
 Si bien actualmente es mucho más accesible salir de viaje, no es tan común hacerlo a lugares lejanos o viajes de muchas horas, porque es caro, lejos y porque generalmente si vas mas allá de los países vecinos aparece la barrera del idioma, entre muchas otras cosas, además, a cierta edad existen algunas dificultades que hacen que la toma de decisiones sea aún más difícil: tiempo, días de vacaciones, deudas, responsabilidades, coordinación y cojones**.**
 

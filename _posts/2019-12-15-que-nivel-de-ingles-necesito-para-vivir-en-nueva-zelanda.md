@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Que nivel de ingles necesito para vivir en Nueva zelanda
-date:   2019-12-15 21:10:13 GMT+12
+title: Que nivel de ingles necesito para vivir en Nueva zelanda
+date: 2019-12-15 21:10:13 GMT+12
 categories: Nueva-Zelanda
 image: http://img.youtube.com/vi/9LTWRcBxec0/maxresdefault.jpg
 ---

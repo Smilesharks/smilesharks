@@ -1,9 +1,9 @@
 ---
 layout: post
-title: '#02 Combinar y alinear como un Pro &#8211; Sketch app tutorial español'
+title: Combinar y alinear como un Pro &#8211; Sketch app tutorial español
 date: 2017-07-17T16:50:20+00:00
-image: http://img.youtube.com/vi/OxWYmKR2Yps/maxresdefault.jpg
-categories: blog
+categories: Sketch
+image: 'http://img.youtube.com/vi/OxWYmKR2Yps/maxresdefault.jpg'
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OxWYmKR2Yps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

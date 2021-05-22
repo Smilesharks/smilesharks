@@ -2,10 +2,8 @@
 layout: post
 title: Auckland, la ciudad de las despedidas
 date: 2019-02-25 11:28:37 +1300
-image: http://img.youtube.com/vi/3fiQ2R7WD_M/maxresdefault.jpg
-categories:
-  - Blog
-  - Video
+categories: Nueva-Zelanda
+image: 'http://img.youtube.com/vi/3fiQ2R7WD_M/maxresdefault.jpg'
 ---
 Un amigo una vez me dijo, hacer amigos acá es como encontrarse con un cachorro, te lo quieres quedar pero sabes que no te puedes encariñar.
 

@@ -2,10 +2,8 @@
 layout: post
 title: El primer mes en Nueva Zelanda
 date: 2018-11-30T02:51:43+00:00
-image: https://miro.medium.com/max/1400/0*Zz3gJV2l91bMYTWD
-categories:
-  - Blog
-  - Video
+categories: Nueva-Zelanda
+image: 'https://miro.medium.com/max/1400/0*Zz3gJV2l91bMYTWD'
 ---
 Ya a pasado un mes desde que estoy viviendo en Auckland y en este mes he aprendido algunas cosas de Nueva Zelanda que podrían ayudarte si quieres venir a Nueva Zelanda o te cambias de país. Obviamente este es solo el primer vistazo.
 
