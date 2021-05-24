@@ -1,5 +1,5 @@
 
-<div class="sm:grid grid-cols-2 space-y-6 sm:space-y-0 sm:gap-12 ">
+<div class="container sm:grid grid-cols-2 space-y-6 sm:space-y-0 sm:gap-12 ">
     <div class="space-y-6">
         <h5>Te gusto el artículo?</h5>
         <p class="mb-4 md:mb-0">Considere la posibilidad de compartirlo en Twitter para que otros puedan disfrutarlo también</p>
@@ -15,4 +15,3 @@
         {% include icons.html %}
     </div>
 </div>
-        <li class="twitter"><a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}{% if page.description %}&text={{ page.description | url_escape }}{% else %}{{ page.title | url_escape }}{% endif %}{% if site.twitter %}&via={{ site.twitter }}{% endif %}" title="Share on Twitter">Twitter</a></li>
