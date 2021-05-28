@@ -4,20 +4,8 @@ title: 6 consejos útiles para principiante en Sketch
 date: 2017-10-17T14:51:54+00:00
 categories: Sketch
 image: 'https://miro.medium.com/max/60/0*7j4W7nreTc5Lu3Bp.?q=20/'
+youtubeId: ''
 ---
-
-<!-- ---
-layout: post
-title:  6 consejos útiles para principiante en Sketch
-seoTitle: How I Built my Blog using MDX, Next.js, and React
-abstract: An in-depth look at the technical structure for my blog
-date: 2017-10-17T14:51:54+00:00
-categories:
-  - blog
-  - Sketch
-image:
---- -->
-
 6 consejos básicos que tal vez no conoces y que te ayudarán a aumentar tu productividad en Sketch.
 
 **Consejo uno — Duplicar cualquier cosa en segundos**

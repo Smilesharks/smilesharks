@@ -3,7 +3,8 @@ layout: post
 title: El primer mes en Nueva Zelanda
 date: 2018-11-30T02:51:43+00:00
 categories: Nueva-Zelanda
-image: 'https://miro.medium.com/max/1400/0*Zz3gJV2l91bMYTWD'
+image: 'http://img.youtube.com/vi/uq09Nm05g8Y/maxresdefault.jpg'
+youtubeId: 'uq09Nm05g8Y'
 ---
 Ya a pasado un mes desde que estoy viviendo en Auckland y en este mes he aprendido algunas cosas de Nueva Zelanda que podrían ayudarte si quieres venir a Nueva Zelanda o te cambias de país. Obviamente este es solo el primer vistazo.
 
@@ -40,5 +41,3 @@ El Internet en las calles también es algo que me tiene muy feliz de Auckland, e
 **Caminar por el otro lado**
 
 Aunque parezca tonto el que todos sea por la izquierda es algo que se tenga que tomar a la ligera a la hora de cruzar una calle o de andar en bicicleta.
-
-<iframe width="100%" height="350" src="https://www.youtube.com/embed/uq09Nm05g8Y" frameborder="0" allowfullscreen></iframe>

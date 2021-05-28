@@ -4,10 +4,8 @@ title: 🎥  MOVIEDATE - Tu próxima cita con la pantalla grande
 date: 2019-02-26T08:06:15+00:00
 categories: pro
 image: '/assets/img/articles/md.gif'
+youtubeId: 'u8L7Sdg8rJY'
 ---
-
-<iframe width="100%" height="350" src="https://www.youtube.com/embed/u8L7Sdg8rJY" frameborder="0" allowfullscreen></iframe>
-
 ¿Ansioso por el estreno de la nueva película de tu saga preferida? ¿No puedes decidirte cuál será la próxima película que iras a ver al cine?
 
 

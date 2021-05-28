@@ -4,6 +4,7 @@ title: Ir al ritmo de tu cabeza
 date: February 1, 2017
 categories: Video
 image: https://miro.medium.com/max/2400/1*-D3ko2z4N5ytRHm90oUY3g.png
+youtubeId: ''
 ---
 
 Esta es una pequeña introducción al porqué de este blog.

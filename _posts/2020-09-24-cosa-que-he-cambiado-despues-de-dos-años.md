@@ -4,11 +4,9 @@ title: Cosas que he cambiado después de dos años viviendo en nueva zelanda
 date: 2020-09-24 11:28:37 +1300
 categories: Nueva-Zelanda
 image: 'http://img.youtube.com/vi/4hzhnkH0me4/maxresdefault.jpg'
+youtubeId: '4hzhnkH0me4'
 ---
 Hola que tal a todos, y bienvenidos nuevamente. En este video les quiero contar las diferencias culturales con las que he aprendido a vivir luego de 2 años siendo un Chileno en Nueva Zelanda
-
-[![Video](http://img.youtube.com/vi/4hzhnkH0me4/maxresdefault.jpg)](http://www.youtube.com/watch?v=4hzhnkH0me4 "Click para ver el video")
-[https://youtu.be/4hzhnkH0me4](https://youtu.be/4hzhnkH0me4)
 
 ## **Desde Chile a Nueva Zelanda**
 

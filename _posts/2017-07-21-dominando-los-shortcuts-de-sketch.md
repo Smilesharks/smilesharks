@@ -4,6 +4,7 @@ title: Dominando los Shortcuts de Sketch
 date: Jul 21, 2017
 categories: Sketch
 image: 'https://miro.medium.com/max/2400/1*Iii73Z8JXl8KE63zx3Sa-A.png'
+youtubeId: ''
 ---
 ## Dominando los Shortcuts de Sketch
 

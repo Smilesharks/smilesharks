@@ -4,10 +4,8 @@ title: Combinar y alinear como un Pro &#8211; Sketch app tutorial español
 date: 2017-07-17T16:50:20+00:00
 categories: Sketch
 image: 'http://img.youtube.com/vi/OxWYmKR2Yps/maxresdefault.jpg'
+youtubeId: 'OxWYmKR2Yps'
 ---
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OxWYmKR2Yps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 En este post conoceremos los principales conceptos para combinar y alinear elementos como un verdadero profesional, más un super Pro tip
 
 
