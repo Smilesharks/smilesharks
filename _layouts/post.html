@@ -19,7 +19,8 @@ comments: 0
                         {% assign categories = page.categories %}
                     {% endif %}
                     {% for category in categories %}
-                    <a class="bg-yellow-200 hover:bg-yellow-200 text-sm text-yellow-800 px-2 rounded-md cursor-pointer" href="{{site.baseurl}}/categories/{{category|slugize}}">{{category}}</a>
+                    <a class="bg-yellow-200 hover:bg-yellow-200 text-sm text-yellow-800 px-2 rounded-md cursor-pointer" href="{{site.baseurl}}{{category | slugize}}">{{category}}</a>
+                    <a class="bg-yellow-200 hover:bg-yellow-200 text-sm text-yellow-800 px-2 rounded-md cursor-pointer" href="{{ category | first }}">{{category}}</a>
                     {% unless forloop.last %}&nbsp;{% endunless %}
                     {% endfor %}
                   </div>
@@ -38,8 +39,6 @@ comments: 0
                         {% else %}
                         {% include youtubePlayer.html id=page.youtubeId %}
                     {% endif %}
-
-                    <!-- <img class="sm:rounded-xl object-cover w-full sm:h-96" src="{{ page.image | prepend: site.baseurl }}" alt="{{ page.title }}" title="{{ page.title }}" /> -->
                 </div>
             </main>
         </div>

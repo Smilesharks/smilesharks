@@ -2,7 +2,7 @@
 layout: post
 title: 🎥  MOVIEDATE - Tu próxima cita con la pantalla grande
 date: 2019-02-26T08:06:15+00:00
-categories: pro
+categories: articulos
 image: '/assets/img/articles/md.gif'
 youtubeId: 'u8L7Sdg8rJY'
 ---

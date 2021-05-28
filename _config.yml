@@ -37,34 +37,35 @@ jekyll_admin:
   homepage: "pages"
 
 collections:
+  category:
+    output: true
   projects:
     output: true
     permalink: /projects/:name
-  defaults:
-      values:
-        layout: "pro"
   minipro:
     output: true
     permalink: /minipro/:name
 
-
-
 defaults:
-  -
-    scope:
+  - scope:
       path: "" # an empty string here means all files in the project
     values:
       author: "Ariel"
       layout: "default"
       author_pic: "https://miro.medium.com/fit/c/262/262/0*j1z_FcHb_vjgf5cf.jpeg"
       image: https://source.unsplash.com/1280x720/?minimal
-      # image: /assets/img/img.svg
+  -
+    scope:
+      path: ""
+      type: "category"
+    values:
+      layout: category
 
-# permalink: pretty
+permalink: pretty
 permalink: /:categories/:title/
 # Set the Sass partials directory, as we're using @imports
 sass:
-  style: :expanded # You might prefer to minify using :compressed
+  style: :compressed # You might prefer to minify using :compressed or :expanded
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
