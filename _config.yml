@@ -25,6 +25,7 @@ plugins:
   - jekyll-paginate 
   - jekyll-sitemap
   - jekyll-email-protect
+  - jekyll-archives
   # - jekyll-seo-tag
   # - jekyll-postcss
 jekyll_admin:
@@ -37,14 +38,16 @@ jekyll_admin:
   homepage: "pages"
 
 collections:
-  category:
-    output: true
   projects:
     output: true
     permalink: /projects/:name
   minipro:
     output: true
     permalink: /minipro/:name
+collections:
+  archives:
+    output: true
+    permalink: /archives/:path/
 
 defaults:
   - scope:
@@ -54,12 +57,6 @@ defaults:
       layout: "default"
       author_pic: "https://miro.medium.com/fit/c/262/262/0*j1z_FcHb_vjgf5cf.jpeg"
       image: https://source.unsplash.com/1280x720/?minimal
-  -
-    scope:
-      path: ""
-      type: "category"
-    values:
-      layout: category
 
 permalink: pretty
 permalink: /:categories/:title/

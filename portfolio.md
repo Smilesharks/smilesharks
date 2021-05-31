@@ -1,6 +1,6 @@
 ---
 layout: portfolio-layout
-title: Portfolio
+title: Portfolio Ariel Cerda
 permalink: /portfolio/
 ---
 
