@@ -26,7 +26,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-email-protect
   # - jekyll-archives
-  # - jekyll-seo-tag
+  - jekyll-seo-tag
   # - jekyll-postcss
 jekyll_admin:
   hidden_links:
@@ -49,7 +49,7 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       author: "Ariel"
-      layout: "default"
+      # layout: "default"
       author_pic: "https://miro.medium.com/fit/c/262/262/0*j1z_FcHb_vjgf5cf.jpeg"
       image: https://source.unsplash.com/1280x720/?minimal
 
@@ -63,6 +63,15 @@ sass:
 # You can find your shortname on the Settings page of your Disqus account
 disqus: smilesharks
 
+
+social:
+  name: Ariel Cerda
+  links:
+    - https://twitter.com/Smilesharks
+    - https://www.linkedin.com/in/Smilesharks
+    - https://github.com/Smilesharks
+    - https://www.instagram.com/smilesharks/
+    - https://www.youtube.com/channel/UCWip2TrjNMXb0kg6LWbsNzw
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -2,7 +2,7 @@
 layout: post
 title: Utilizar Notion como tu portafolio (Free template)
 date:   2021-05-28 23:35:29 GMT+12
-categories: articulos
+categories: Articulos
 image: 'https://www.notion.so/cdn-cgi/image/f=auto,w=3840,q=100/front-static/pages/work/carousel-desktop/wiki-v5/en-US.png'
 youtubeId: ''
 ---

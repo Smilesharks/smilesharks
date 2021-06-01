@@ -19,8 +19,7 @@ comments: 0
                         {% assign categories = page.categories %}
                     {% endif %}
                     {% for category in categories %}
-                    <a class="bg-yellow-200 hover:bg-yellow-200 text-sm text-yellow-800 px-2 rounded-md cursor-pointer" href="{{site.baseurl}}{{category | slugize}}">{{category}}</a>
-                    <a class="bg-yellow-200 hover:bg-yellow-200 text-sm text-yellow-800 px-2 rounded-md cursor-pointer" href="{{ category | first }}">{{category}}</a>
+                    <a class="bg-yellow-200 hover:bg-yellow-200 text-sm text-yellow-800 px-2 rounded-md cursor-pointer" href="{{ site.url }}/{{ category | first | slugize }}">{{category}}</a>
                     {% unless forloop.last %}&nbsp;{% endunless %}
                     {% endfor %}
                   </div>
