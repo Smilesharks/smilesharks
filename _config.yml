@@ -83,9 +83,3 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-
-# Archives
-collections:
-  archives:
-    output: true
-    permalink: /archives/:path/
