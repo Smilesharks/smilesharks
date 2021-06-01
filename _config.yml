@@ -25,7 +25,7 @@ plugins:
   - jekyll-paginate 
   - jekyll-sitemap
   - jekyll-email-protect
-  - jekyll-archives
+  # - jekyll-archives
   # - jekyll-seo-tag
   # - jekyll-postcss
 jekyll_admin:
@@ -44,11 +44,6 @@ collections:
   minipro:
     output: true
     permalink: /minipro/:name
-collections:
-  archives:
-    output: true
-    permalink: /archives/:path/
-
 defaults:
   - scope:
       path: "" # an empty string here means all files in the project
@@ -88,3 +83,9 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+
+# Archives
+collections:
+  archives:
+    output: true
+    permalink: /archives/:path/
