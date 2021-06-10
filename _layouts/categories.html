@@ -12,7 +12,7 @@ title: Categories
       {% for post in site.categories[category_name] %}
         <a href="{{ post.url | absolute_url }}">
             <div class="bg-gray-50 rounded-md w-full p-0 hover:shadow-xl shadow-sm transition transform hover:-translate-y-1 duration-300 ease-in-out">
-                <!-- <img src="{{ post.image | prepend: site.baseurl }}" alt="{{ post.title }}" title="{{ post.title }}" class="rounded-t-lg" alt="" /> -->
+                <img src="{{ post.image | prepend: site.baseurl }}" alt="{{ post.title }}" title="{{ post.title }}" class="rounded-t-lg" alt="" />
                 <div class="p-4 space-y-2">
                     <div class="flex flex-col">
                         <!-- <span class="bg-yellow-200 hover:bg-yellow-200 text-sm text-yellow-800 px-2 rounded-md cursor-pointer">{{ post.categories | first }}</span> -->

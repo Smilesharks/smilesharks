@@ -2,7 +2,7 @@
 layout: post
 title: 6 consejos útiles para principiante en Sketch
 date: 2017-10-17T14:51:54+00:00
-categories: Sketch
+categories: Diseño
 image: 'https://miro.medium.com/max/60/0*7j4W7nreTc5Lu3Bp.?q=20/'
 youtubeId: ''
 ---

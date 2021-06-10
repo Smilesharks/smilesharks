@@ -34,7 +34,7 @@ comments: 0
                 <div class="sm:flex sm:space-x-6 items-center w-full relative shadow-2xl hover:shadow-lg transition duration-300 ease-in-out rounded-md block">
                     {% assign youtubeId = post.youtubeId | strip_newlines %}
                     {% if page.youtubeId == ""  %}
-                        <img class="sm:rounded-xl object-cover w-full sm:h-96" src="{{ page.image | prepend: site.baseurl }}" alt="{{ page.title }}" title="{{ page.title }}" />
+                        <img class="sm:rounded-xl object-cover w-full sm:h-96" src="{{ page.image | prepend: site.url }}" alt="{{ page.title }}" title="{{ page.title }}" />
                         {% else %}
                         {% include youtubePlayer.html id=page.youtubeId %}
                     {% endif %}

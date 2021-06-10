@@ -2,7 +2,7 @@
 layout: post
 title: Combinar y alinear como un Pro &#8211; Sketch app tutorial español
 date: 2017-07-17T16:50:20+00:00
-categories: Sketch
+categories: Diseño
 image: 'http://img.youtube.com/vi/OxWYmKR2Yps/maxresdefault.jpg'
 youtubeId: 'OxWYmKR2Yps'
 ---
