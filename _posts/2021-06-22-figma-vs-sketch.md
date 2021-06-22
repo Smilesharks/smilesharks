@@ -7,7 +7,7 @@ image: '/assets/img/articles/figma-vs-sketch.jpg'
 youtubeId: ''
 ---
 
-Siempre estuve viendo a [Figma](figma.com) desde la vereda del frente, esperando convencerme de que en realidad podía lograr los mismos resultados que obtenía con [Sketch](https://www.sketch.com/), siendo esta mi herramienta principal por bastantes años. ¿Cómo es que una web app podría estar por sobre una aplicación de escritorio? Como Figma podría superar a la enorme cantidad de plug-ins y la gran comunidad que hay detrás de Sketch. Siendo yo quien era el principal evangelizador de Sketch dentro del grupo de diseñadores amigos y tratando de convencerlos de que no había una mejor forma de crear interfaces o diseñar para web e incluso creando hasta una pequeña comunidad para enseñar sobre de la herramienta.
+Siempre estuve viendo a [Figma](figma.com) desde la vereda del frente, esperando convencerme de que en realidad podía lograr los mismos resultados que obtenía con [Sketch](https://www.sketch.com/), siendo esta mi herramienta principal por bastantes años. ¿Cómo es que una web app podría estar por sobre una aplicación de escritorio? ¿Como Figma podría superar a la enorme cantidad de plug-ins y la gran comunidad que hay detrás de Sketch? Siendo yo quien era el principal evangelizador de Sketch dentro del grupo de diseñadores amigos y tratando de convencerlos de que no había una mejor forma de crear interfaces o diseñar para web e incluso creando hasta una pequeña comunidad para enseñar sobre de la herramienta.
 
 De esto ya han pasado un par de años, y no veo la forma de volver a atrás. Al menos en el futuro cercano Sketch quedo atrás en cuanto a innovación, siendo el último rayo de esperanza en su momento para mí la implementación del control de versiones similar a [Github](http://github.com/) con [Abstract](https://abstract.com/) o [Plant](https://plantapp.io/), la cual quedo obsoleta con la implementación de parte de Figma con las libreras compartidas y la colaboración en tiempo real, posteriormente Sketch lo adopto, pero ya era muy tarde.
 
@@ -15,7 +15,7 @@ Figma supera claramente a Sketch en términos de colaboración. Al igual que Goo
 
 ### **Menos es más**
 
-Usar Sketch significa que tienes que usar también [InVision](https://www.invisionapp.com/), Abstract o [Zeplin](https://zeplin.io/). Figma es todo en uno, más aún ahora que se implementó [Jams](https://www.figma.com/figjam/) para crear whiteboard, brainstormings diagramas  y moodboards. Además no voy a hablar sobre que puedes insertar tus diseños a cualquier página web.
+Usar Sketch significa que tienes que usar también [InVision](https://www.invisionapp.com/), Abstract o [Zeplin](https://zeplin.io/). Figma es todo en uno, más aún que se implementó [Jams](https://www.figma.com/figjam/) para crear whiteboard, brainstormings diagramas  y moodboards. Además no voy a hablar sobre que puedes insertar tus diseños a cualquier página web.
 
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FYW6DnqdAKgxEXNSiL1ZD29%2FRecord-Player-Community%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
 
@@ -50,7 +50,7 @@ Importar a través de la barra de herramientas.
 
 ### **Que pasa con mis plug-ins favoritos**
 
-Tu plug-in favorito de Sketch probablemente ya un está integrado nativamente, como mi favorito: [auto-layout](https://www.youtube.com/watch?v=TyaGpGDFczw&ab_channel=Figma) o existe un plug-in de Figma. Puedes buscar e instalar un plug-in desde la comunidad de Figma.  Además, los plug-ins de Figma están siempre actualizados. Adiós a buscar plug-ins en Github.
+Tu plug-in favorito de Sketch probablemente ya está integrado nativamente, como mi favorito: [auto-layout](https://www.youtube.com/watch?v=TyaGpGDFczw&ab_channel=Figma) o existe un plug-in de Figma. Puedes buscar e instalar un plug-in desde la comunidad de Figma.  Además, los plug-ins de Figma están siempre actualizados. Adiós a buscar plug-ins en Github.
 
 ### **No quiero un montón de gente en mi archivo de diseño**
 
@@ -66,13 +66,13 @@ Todo en un solo lugar suena genial, pero te hace dependiente.
 
 ### Rendimiento
 
-Si trabajas dentro del mismo archivo con mucha gente colaborando puede tener problemas de lentitud, aún no he trabajado en un proyecto que involucre tanta gente al mismo tiempo, pero he sabido de qué tiene problemas de rendimiento.
+Si trabajas dentro del mismo archivo con mucha gente colaborando puede tener problemas de lentitud, aún no he trabajado en un proyecto que involucre tanta gente al mismo tiempo, pero he enterado qué tiene problemas de rendimiento.
 
 ### Precio
 
 Figma es una aplicación de pago mensual, a diferencia de Sketch que es anual y te permite tener acceso a la última versión distribuida dentro de ese año.
 
-### ¿Quién lo hizo?
+### ¿Quién hizo el cambio del archivo?
 
 Debes estar al tanto de quién hizo la última edición. Aunque hay una función de control de versiones en Figma, volver atrás significa restaurar una versión completa del archivo.
 
@@ -90,10 +90,10 @@ Al estar basado en el navegador, a veces no se puede ver el diseño de tu colega
 
 ### Exportar rápidamente
 
-Con sketch puedes arrastrar la previsualización del elemento a exportar al escritorio o carpeta, si exportas en Figma siempre será a tu carpeta de descargas. (Si duda esta es la función que más extraño)
+Con sketch puedes arrastrar la previsualización del elemento a exportar al escritorio o carpeta, si exportas en Figma siempre será a tu carpeta de descargas. (Sin duda esta es la función que más extraño)
 
 ## Conclusión
 
-Figma en mi opinión ha superado al maestro, se ve que es una herramienta que ya siendo muy buena tiene potencia de crecimiento e innovación, si eres un diseñador experimentado que se reúsa a cambiarse como yo en su momento, sin duda debes darle una oportunidad, el cambio no es tan grande y solo tendrás que acostumbrarte a un par de nuevos atajos de teclado y si eres nuevo en esto creo que es la mejor herramienta para poder comenzar.
+Figma en mi opinión ha superado al maestro, se ve que es una herramienta que ya siendo muy buena tiene potencial de crecimiento e innovación, si eres un diseñador experimentado que se rehúsa a cambiarse como yo en su momento, sin duda debes darle una oportunidad, el cambio no es tan grande y solo tendrás que acostumbrarte a un par de nuevos atajos de teclado y si eres nuevo en esto creo que es la mejor herramienta para poder comenzar.
 
-En lo personal la experiencia de pasar de ser un promotor de Sketch a uno de Figma es que no hay que enamorarse de la herramienta, lo importante es si te hace mejor diseñador o más eficiente, y no hay que quedarse tan cómodo con lo que ya sabes y seguir aprendiendo y probando nuevas herramientas, lo peor que puede pasar es que aprendas algo nuevo.
+En lo personal lo que aprendí de pasar de ser un promotor de Sketch a uno de Figma es que no hay que enamorarse de la herramienta, lo importante es si te hace mejor diseñador o más eficiente, y no hay que quedarse tan cómodo con lo que ya sabes y seguir aprendiendo y probando nuevas herramientas, lo peor que puede pasar es que aprendas algo nuevo.
