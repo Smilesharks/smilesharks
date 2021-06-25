@@ -2,7 +2,7 @@
 layout: post
 title: Figma vs Sketch ¿Qué herramienta de diseño de interfaz de usuario es mejor? Actualización 2021
 date:   2021-06-22 21:42:09 GMT+12
-categories: Ux-Ui
+categories: Diseño
 image: '/assets/img/articles/figma-vs-sketch.jpg'
 youtubeId: ''
 ---
@@ -17,8 +17,9 @@ Figma supera claramente a Sketch en términos de colaboración. Al igual que Goo
 
 Usar Sketch significa que tienes que usar también [InVision](https://www.invisionapp.com/), Abstract o [Zeplin](https://zeplin.io/). Figma es todo en uno, más aún que se implementó [Jams](https://www.figma.com/figjam/) para crear whiteboard, brainstormings diagramas  y moodboards. Además no voy a hablar sobre que puedes insertar tus diseños a cualquier página web.
 
+<div class='videoContainer'>
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FYW6DnqdAKgxEXNSiL1ZD29%2FRecord-Player-Community%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
-
+</div>
 ### **Más rápido en la nube**
 
 Puedes acceder a todos tus archivos desde cualquier navegador y cualquier plataforma (también cuenta con una aplicación de escritorio) además de evitar tener que actualizar a la última versión  o enviar archivos.
