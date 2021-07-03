@@ -3,7 +3,7 @@ layout: post
 title: ¿Cuánto es el presupuesto semanal de un estudiante en Nueva Zelanda?
 date:   2021-06-29 22:05:50 GMT+12
 categories: Nueva-Zelanda
-image: 'http://img.youtube.com/vi/UPPih2kLtV8-I/maxresdefault.jpg'
+image: 'https://img.youtube.com/vi/UPPih2kLtV8/maxresdefault.jpg'
 youtubeId: 'UPPih2kLtV8'
 ---
 
